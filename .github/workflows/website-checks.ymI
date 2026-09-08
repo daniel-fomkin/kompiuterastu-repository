@@ -1,0 +1,51 @@
+name: Website checks
+ 
+on:
+
+  pull_request:
+
+    branches: [main]
+ 
+jobs:
+ 
+  html-check:
+
+    name: HTML check
+
+    runs-on: ubuntu-latest
+ 
+    steps:
+
+      - name: Get project files
+
+        uses: actions/checkout@v4
+ 
+      - name: Check that index.html exists
+
+        run: test -f index.html
+ 
+      - name: Check that HTML tag exists
+
+        run: grep -qi "<html" index.html
+ 
+      - name: Check that H1 exists
+
+        run: grep -qi "<h1" index.html
+ 
+ 
+  css-check:
+
+    name: CSS check
+
+    runs-on: ubuntu-latest
+ 
+    steps:
+
+      - name: Get project files
+
+        uses: actions/checkout@v4
+ 
+      - name: Check that style.css exists and is not empty
+
+        run: test -s CSS/style.css
+ 
