@@ -7,7 +7,23 @@ on:
     branches: [main]
  
 jobs:
- 
+  branch-name-check:
+    name: Branch name check
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check branch name
+        run: |
+          BRANCH="${{ github.head_ref }}"
+
+          if [[ ! "$BRANCH" =~ ^Task/[A-Z]+-[0-9]+$ ]]; then
+            echo "❌ Invalid branch name: $BRANCH"
+            echo "Expected format: Task/TaskId. Example: Task/SCRUM-01"
+            exit 1
+          fi
+
+          echo "✅ Branch name is valid: $BRANCH"
   html-check:
 
     name: HTML check
