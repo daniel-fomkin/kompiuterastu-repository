@@ -10,6 +10,7 @@
     --font-h2: 48px;
     --font-h3: 18px;
     --font-body: 18px;
+    --font-body-2: 15px;
     --section-pad: 24px;
 }
 
@@ -20,10 +21,13 @@
 }
 @font-face {
     font-family: body-1-2;
-    src: url(../assets/fonts/Livvic-Medium.ttf);
-    font-weight: 600;
+    src: url(../assets/fonts/Livvic-SemiBold.ttf);
 }
 /* FONTS END */
+
+* {
+    margin: 0;
+}
 
 /* FOOTER */
 footer {
@@ -32,14 +36,38 @@ footer {
     align-items: center;
     background-color: var(--bg-darkest);
     color: white;
+    padding-bottom: 30px;
+    font-size: var(--font-body-2);
 }
 .foot-links a {
     text-decoration: none;
     font-family: body-1-2;
     color: white;
 }
+.foot-links {
+    display: flex;
+    gap: 24px;
+}
+.foot-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -26px;
+}
+.foot-socials > * {
+    margin: 5px;
+    padding: 3px;
+}
 .foot-address, .foot-copyright {
     font-family: body-1-2;
     opacity: 0.6;
+    padding-top: 28px;
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 34px;
+}
+.foot-logo {
+    padding-top: 65px;
+    padding-bottom: 23px;
+    padding-left: 5px;
 }
 /* FOOTER END*/
