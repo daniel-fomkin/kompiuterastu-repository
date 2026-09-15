@@ -138,7 +138,7 @@ ul{
     gap: 24px;
 }
 
-li, li a{
+li, li a, button a{
     text-decoration: none;
     list-style: none;
     width: fit-content;
