@@ -1,0 +1,62 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-darker);
+    margin: 24px;
+    padding: 88px;
+}
+
+.directors_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main>section:nth-child(2) h1 {
+    color: white;
+    margin: 0;
+    padding: 0 0 45px;
+    text-align: center;
+}
+
+.director {
+    width: 327px;
+    height: 253px;
+    margin: 0 0 52px;
+    padding: 32px;
+    background-color: var(--bg-darkest);
+    text-align: center;
+}
+
+.director img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.add-button img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.director h3 {
+    color: var(--accent-blue);
+    margin: 0;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: var(--font-h3);
+    font-style: normal;
+}
+
+.director p {
+    color: white;
+    font-style: italic;
+    margin: 0;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: var(--font-body-2);
+}
