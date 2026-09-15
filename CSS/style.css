@@ -23,13 +23,6 @@
     font-family: body-1-2;
     src: url(../assets/fonts/Livvic-SemiBold.ttf);
 }
- 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    color: white;
-    padding: 0;
-}
 
 /* FONTS END */
 
@@ -42,7 +35,31 @@
         right: 0px;
     }
 }
+
+@keyframes closeBurger {
+    from{
+        right: 0px;
+    }
+    to{
+        right: -75vw;
+    }
+}
 /* Animations End */
+
+/* General Start */
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    padding: 0;
+}
+
+button, a{
+    cursor: pointer;
+}
+
+/* General End */
 
 /* Navigation Start */
 header{
@@ -121,7 +138,8 @@ ul{
     gap: 24px;
 }
 
-li{
+li, li a{
+    text-decoration: none;
     list-style: none;
     width: fit-content;
     color: #FFF;
@@ -140,7 +158,7 @@ li{
     transition: 500ms;
 }
 
-li:hover{
+li:hover, a:hover{
     color: var(--accent-coral);
 }
 

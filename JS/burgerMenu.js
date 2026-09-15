@@ -8,7 +8,10 @@ console.log(menuButton)
 
 menuButton.addEventListener("click", () => {
     menu.classList.toggle("hidden");
-    burger.style.animation = "openBurger 1s"
+    burger.style.animation = "openBurger 1s";
 });
 
-closeButton.addEventListener("click", () => menu.classList.toggle("hidden"));
+closeButton.addEventListener("click", () => {
+    burger.style.animation = "closeBurger 1.5s";
+    setTimeout(() => menu.classList.toggle("hidden"), 1000);
+});
