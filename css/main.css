@@ -1,0 +1,14 @@
+:root {
+    --bg-lightest: rgb(1, 78, 86);
+    --bg-lighter: rgb(0, 64, 71);
+    --bg-darker: rgb(1, 47, 52);
+    --bg-darkest: rgb(0, 32, 41);
+    --accent-coral: rgb(246, 126, 126);
+    --accent-blue: rgb(121, 200, 199);
+    --decor: rgb(44, 98, 105);
+    --font-h1: 64px;
+    --font-h2: 48px;
+    --font-h3: 18px;
+    --font-body: 18px;
+    --section-pad: 24px;
+}
