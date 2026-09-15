@@ -10,17 +10,6 @@
     --font-h2: 48px;
     --font-h3: 18px;
     --font-body: 18px;
+    --font-body-2: 15px;
     --section-pad: 24px;
-}
-
-/* FONTS */
-
-@font-face {
-    font-family: H1-H2-H3;
-    src: url(../assets/fonts/Livvic-Bold.ttf);
-}
-@font-face {
-    font-family: body-1-2;
-    src: url(../assets/fonts/Livvic-Medium.ttf);
-    font-weight: 600;
 }
