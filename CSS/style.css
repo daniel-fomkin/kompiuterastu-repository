@@ -14,7 +14,6 @@
 }
 
 /* FONTS */
-
 @font-face {
     font-family: H1-H2-H3;
     src: url(../assets/fonts/Livvic-Bold.ttf);
@@ -24,3 +23,23 @@
     src: url(../assets/fonts/Livvic-Medium.ttf);
     font-weight: 600;
 }
+/* FONTS END */
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-darkest);
+    color: white;
+}
+.foot-links a {
+    text-decoration: none;
+    font-family: body-1-2;
+    color: white;
+}
+.foot-address, .foot-copyright {
+    font-family: body-1-2;
+    opacity: 0.6;
+}
+/* FOOTER END*/
