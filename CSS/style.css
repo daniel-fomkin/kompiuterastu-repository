@@ -127,6 +127,7 @@ li{
     color: #FFF;
     line-height: 155.556%;
     font-size: 18px;
+    transition: 250ms;
 }
 
 .burger-menu nav button{
@@ -136,6 +137,16 @@ li{
     font-size: var(--font-body);
     line-height: 155.556%;
     font-family: "body-1-2";
+    transition: 500ms;
+}
+
+li:hover{
+    color: var(--accent-coral);
+}
+
+.burger-menu nav button:hover{
+    color: var(--bg-darkest);
+    background-color: white;
 }
 
 .hidden{

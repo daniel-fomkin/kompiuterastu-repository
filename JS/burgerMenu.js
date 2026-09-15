@@ -10,4 +10,5 @@ menuButton.addEventListener("click", () => {
     menu.classList.toggle("hidden");
     burger.style.animation = "openBurger 1s"
 });
+
 closeButton.addEventListener("click", () => menu.classList.toggle("hidden"));
