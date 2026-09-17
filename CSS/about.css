@@ -86,22 +86,19 @@ main>section:nth-child(2) {
 
 .director h3 {
     color: var(--accent-blue);
-    margin: 5px;
+    padding: 10px 0 0 0;
     font-weight: 700;
     line-height: 28px;
-    font-size: var(--h1-h2-h3);
+    font-size: var(--font-h3);
     font-style: normal;
-    padding: 3px 0 0 0;
 }
 
 .director p {
     color: white;
-    margin: 0;
     font-weight: 500;
     line-height: 25px;
-    font-size: var(--body-1-2);
+    font-size: var(--font-body-2);
     font-style: italic;
-    padding: 0 0 3px 0;
 }
 
 .director-back {
@@ -115,7 +112,7 @@ main>section:nth-child(2) {
 
 .director-back p {
     margin-top: 10px;
-    font-size: var(--font-body-2);
+    font-size: var(--font-body);
     line-height: 18px;
     font-style: normal;
 }
