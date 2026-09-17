@@ -28,6 +28,44 @@
 
 /* FONTS END */
 
+/* CONTACT SECTION */
+.contact{
+    background-color: var(--accent-coral);
+    position: relative;
+    padding: 83px 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+   
+}
+.contact__title{
+    color:var(--bg-darkest) ;
+    font: normal 700 32px/32px H1-H2-H3;
+    text-align: center;
+}
+.contact__button{
+   
+    color:var(--bg-darkest) ;
+    font: normal 600 18px/28px H1-H2-H3;
+    border-radius: 24px;
+    border: 2px solid var(--bg-darkest);
+    padding: 9px 33px;
+    background-color: var(--accent-coral);
+    transition: 0.7s;
+}
+.contact__button:hover{
+    background-color: rgb(226, 100, 100);
+    box-shadow: 0 7px 20px rgba(26, 26, 36, 0.2); 
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.contact__img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /* Animations Start */
 @keyframes openBurger {
     from {
