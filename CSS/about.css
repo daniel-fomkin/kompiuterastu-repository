@@ -171,3 +171,40 @@ main>section:nth-child(2) {
 .director-back .add-button:hover {
     background-color: var(--accent-coral);
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Start  */
+header section{
+    background-color: var(--bg-lightest);
+    color: white;
+    font-family: "body-1-2";
+    padding: 32px var(--section-pad);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 108px;
+    background-image: url(../assets/icons/about-header-bg-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+header section h1{
+    font-family: "H1-H2-H3";
+    font-size: var(--font-h1);
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+header section p {
+    text-align: center;
+    font-size: var(--font-body-2);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 186.667%;
+}
+/* Header End  */
