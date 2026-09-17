@@ -57,10 +57,11 @@ h2{
 }
 
 .contact-card p{
-    font-size: var(--font-body);
-    font-family: "body-1-2";
+    font-size: var(--font-h3);
+    font-family: "H1-H2-H3";
     font-weight: 700;
     line-height: 155.556%;
+
 }
 
 .contact-card-container{
@@ -108,16 +109,20 @@ header section form input::placeholder, header section form textarea::placeholde
     font-weight: 600;
 }
 
+header section form .input-container:has(textarea){
+    height: 84px;
+}
+
 header section form input:focus, header section form textarea:focus{
     outline: none;
     border-bottom-color: var(--accent-blue);
 }
 
-header section form input:user-invalid{
+header section form input:user-invalid, header section form textarea:user-invalid{
     border-bottom-color: var(--accent-coral);
 }
 
-header section form .input-container:has(input:user-invalid)::after{
+header section form .input-container:has(input:user-invalid)::after, header section form .input-container:has(textarea:user-invalid)::after{
     content: "This field is required";
     color: var(--accent-coral);
     color: #F67E7E;
