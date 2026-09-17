@@ -117,11 +117,27 @@ main>section:nth-child(2) {
     font-style: normal;
 }
 
-.socials {
+span {
     display: flex;
+    align-items: center;
     gap: 14px;
     margin-top: 12px;
-    color: white;
+}
+
+.socials1,
+.socials2 {
+    display: flex;
+    align-items: center;
+}
+
+.socials1 svg,
+.socials2 svg {
+    display: block;
+}
+
+.socials svg:hover path,
+.socials svg:hover path {
+    fill: var(--accent-coral);
 }
 
 .add-button {
