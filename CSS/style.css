@@ -6,10 +6,11 @@
     --accent-coral: rgb(246, 126, 126);
     --accent-blue: rgb(121, 200, 199);
     --decor: rgb(44, 98, 105);
-    --font-h1: 64px;
-    --font-h2: 48px;
+    --font-h1: 40px;
+    --font-h2: 32px;
     --font-h3: 18px;
     --font-body: 18px;
+    --font-body-2: 15px;
     --section-pad: 24px;
 }
 
@@ -19,7 +20,225 @@
     font-family: H1-H2-H3;
     src: url(../assets/fonts/Livvic-Bold.ttf);
 }
+
 @font-face {
     font-family: body-1-2;
     src: url(../assets/fonts/Livvic-SemiBold.ttf);
 }
+
+/* FONTS END */
+
+* {
+    margin: 0;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-darkest);
+    color: white;
+    padding-bottom: 30px;
+    font-size: var(--font-body-2);
+}
+.foot-links a {
+    text-decoration: none;
+    font-family: body-1-2;
+    color: white;
+}
+.foot-links a:hover {
+    color: var(--accent-coral);
+}
+.foot-links {
+    display: flex;
+    gap: 24px;
+}
+.foot-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -26px;
+}
+.foot-socials a:hover svg path, svg:hover path {
+    fill: var(--accent-coral);
+}
+.foot-socials > * {
+    margin: 5px;
+    padding: 3px;
+}
+.foot-socials {
+    margin-bottom: 3px;
+}
+.foot-address, .foot-copyright {
+    font-family: body-1-2;
+    opacity: 0.6;
+    padding-top: 28px;
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 34px;
+}
+.foot-copyright {
+    padding-top: 0;
+}
+.foot-logo {
+    padding-top: 65px;
+    padding-bottom: 23px;
+    padding-left: 5px;
+}
+/* FOOTER END*/
+
+
+/* Animations Start */
+@keyframes openBurger {
+    from {
+        right: -50vw;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+@keyframes closeBurger {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: -75vw;
+    }
+}
+
+/* Animations End */
+
+/* General Start */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    padding: 0;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+/* General End */
+
+/* Navigation Start */
+header {
+    font-family: "body-1-2";
+}
+
+header>nav {
+    background-color: var(--bg-lightest);
+    padding: 48px var(--section-pad);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header>nav button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation End */
+
+/* Burger Menu Start */
+.burger-menu-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.burger-menu {
+    box-sizing: border-box;
+    width: 68%;
+    background-color: var(--bg-lightest);
+    padding: 56px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    background-image: url("../assets/icons/burger-menu-bg-icon.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.burger-menu button {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-menu>button {
+    border: 0;
+    padding: 0;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.burger-menu nav {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    font-size: var(--font-h3);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+li,
+li a,
+button a {
+    text-decoration: none;
+    list-style: none;
+    width: fit-content;
+    color: #FFF;
+    line-height: 155.556%;
+    font-size: 18px;
+    transition: 250ms;
+}
+
+.burger-menu nav button {
+    border-radius: 24px;
+    border: 2px solid #FFF;
+    padding: 9px 34px 7px 33px;
+    font-size: var(--font-body);
+    line-height: 155.556%;
+    font-family: "body-1-2";
+    transition: 500ms;
+}
+
+li:hover,
+a:hover {
+    color: var(--accent-coral);
+}
+
+.burger-menu nav button:hover {
+    color: var(--bg-darkest);
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Burger Menu End */
