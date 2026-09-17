@@ -6,10 +6,11 @@
     --accent-coral: rgb(246, 126, 126);
     --accent-blue: rgb(121, 200, 199);
     --decor: rgb(44, 98, 105);
-    --font-h1: 64px;
-    --font-h2: 48px;
+    --font-h1: 40px;
+    --font-h2: 32px;
     --font-h3: 18px;
     --font-body: 18px;
+    --font-body-2: 15px;
     --section-pad: 24px;
 }
 
@@ -19,6 +20,7 @@
     font-family: H1-H2-H3;
     src: url(../assets/fonts/Livvic-Bold.ttf);
 }
+
 @font-face {
     font-family: body-1-2;
     src: url(../assets/fonts/Livvic-SemiBold.ttf);
@@ -28,26 +30,29 @@
 
 /* Animations Start */
 @keyframes openBurger {
-    from{
+    from {
         right: -50vw;
     }
-    to{
+
+    to {
         right: 0px;
     }
 }
 
 @keyframes closeBurger {
-    from{
+    from {
         right: 0px;
     }
-    to{
+
+    to {
         right: -75vw;
     }
 }
+
 /* Animations End */
 
 /* General Start */
- 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -55,36 +60,38 @@
     padding: 0;
 }
 
-button, a{
+button,
+a {
     cursor: pointer;
 }
 
 /* General End */
 
 /* Navigation Start */
-header{
-   font-family: "body-1-2";  
+header {
+    font-family: "body-1-2";
 }
 
-header > nav{
+header>nav {
     background-color: var(--bg-lightest);
     padding: 48px var(--section-pad);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
- 
-header > nav button{
+
+header>nav button {
     background-color: rgba(255, 255, 255, 0);
     border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /* Navigation End */
- 
+
 /* Burger Menu Start */
-.burger-menu-container{
+.burger-menu-container {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -95,7 +102,7 @@ header > nav button{
     justify-content: flex-end;
 }
 
-.burger-menu{
+.burger-menu {
     box-sizing: border-box;
     width: 68%;
     background-color: var(--bg-lightest);
@@ -110,21 +117,21 @@ header > nav button{
 
 }
 
-.burger-menu button{
+.burger-menu button {
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.burger-menu > button{
+.burger-menu>button {
     border: 0;
     padding: 0;
     width: fit-content;
     align-self: flex-end;
 }
 
- .burger-menu nav{
+.burger-menu nav {
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -132,13 +139,15 @@ header > nav button{
     font-size: var(--font-h3);
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-li, li a, button a{
+li,
+li a,
+button a {
     text-decoration: none;
     list-style: none;
     width: fit-content;
@@ -148,7 +157,7 @@ li, li a, button a{
     transition: 250ms;
 }
 
-.burger-menu nav button{
+.burger-menu nav button {
     border-radius: 24px;
     border: 2px solid #FFF;
     padding: 9px 34px 7px 33px;
@@ -158,16 +167,18 @@ li, li a, button a{
     transition: 500ms;
 }
 
-li:hover, a:hover{
+li:hover,
+a:hover {
     color: var(--accent-coral);
 }
 
-.burger-menu nav button:hover{
+.burger-menu nav button:hover {
     color: var(--bg-darkest);
     background-color: white;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
+
 /* Burger Menu End */
