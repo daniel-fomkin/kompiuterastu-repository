@@ -6,12 +6,12 @@
     --accent-coral: rgb(246, 126, 126);
     --accent-blue: rgb(121, 200, 199);
     --decor: rgb(44, 98, 105);
-    --font-h1: 40px;
-    --font-h2: 32px;
-    --font-h3: 18px;
-    --font-body: 18px;
-    --font-body-2: 15px;
-    --section-pad: 24px;
+    --font-h1: clamp(10px, 10.6vw, 40px);
+    --font-h2: clamp(8px, 8.5vw, 32px);
+    --font-h3: clamp(4px, 4.8vw, 18px);
+    --font-body: clamp(4px, 4.8vw, 18px);
+    --font-body-2: clamp(3px, 4vw, 15px);
+    --section-pad: 6.4vw;
 }
 
 /* FONTS */
@@ -134,10 +134,18 @@ header {
 
 header>nav {
     background-color: var(--bg-lightest);
-    padding: 48px var(--section-pad);
+    padding: 12.8vw var(--section-pad);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+header > nav > img{
+    width: 34.1vw;
+}
+
+header > nav button > img{
+    width: 5.3vw;
 }
 
 header>nav button {
@@ -166,15 +174,14 @@ header>nav button {
     box-sizing: border-box;
     width: 68%;
     background-color: var(--bg-lightest);
-    padding: 56px 25px;
+    padding: clamp(10px, 14.9vw, 56px) clamp(7px, 6.6vw, 25px);
     display: flex;
     flex-direction: column;
-    gap: 39px;
+    gap: 10.4vw;
     background-image: url("../assets/icons/burger-menu-bg-icon.svg");
     background-position: bottom right;
     background-repeat: no-repeat;
     position: relative;
-
 }
 
 .burger-menu button {
@@ -182,6 +189,10 @@ header>nav button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.burger-menu button img{
+    width: 4.8vw;
 }
 
 .burger-menu>button {
@@ -195,14 +206,14 @@ header>nav button {
     align-self: center;
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 9.6vw;
     font-size: var(--font-h3);
 }
 
 ul {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 6.4vw;
 }
 
 li,
@@ -213,14 +224,14 @@ button a {
     width: fit-content;
     color: #FFF;
     line-height: 155.556%;
-    font-size: 18px;
+    font-size: var(--font-body);
     transition: 250ms;
 }
 
 .burger-menu nav button {
     border-radius: 24px;
     border: 2px solid #FFF;
-    padding: 9px 34px 7px 33px;
+    padding: 2.4vw 9.06vw 1.8vw 8.8vw;
     font-size: var(--font-body);
     line-height: 155.556%;
     font-family: "body-1-2";
