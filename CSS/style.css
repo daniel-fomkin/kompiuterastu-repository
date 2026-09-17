@@ -28,6 +28,66 @@
 
 /* FONTS END */
 
+* {
+    margin: 0;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-darkest);
+    color: white;
+    padding-bottom: 30px;
+    font-size: var(--font-body-2);
+}
+.foot-links a {
+    text-decoration: none;
+    font-family: body-1-2;
+    color: white;
+}
+.foot-links a:hover {
+    color: var(--accent-coral);
+}
+.foot-links {
+    display: flex;
+    gap: 24px;
+}
+.foot-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -26px;
+}
+.foot-socials a:hover svg path, svg:hover path {
+    fill: var(--accent-coral);
+}
+.foot-socials > * {
+    margin: 5px;
+    padding: 3px;
+}
+.foot-socials {
+    margin-bottom: 3px;
+}
+.foot-address, .foot-copyright {
+    font-family: body-1-2;
+    opacity: 0.6;
+    padding-top: 28px;
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 34px;
+}
+.foot-copyright {
+    padding-top: 0;
+}
+.foot-logo {
+    padding-top: 65px;
+    padding-bottom: 23px;
+    padding-left: 5px;
+}
+/* FOOTER END*/
+
+
 /* Animations Start */
 @keyframes openBurger {
     from {
