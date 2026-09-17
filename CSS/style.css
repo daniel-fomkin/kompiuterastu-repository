@@ -158,12 +158,15 @@ li, li a, button a{
     transition: 500ms;
 }
 
-li:hover, a:hover{
+li:hover, li a:hover{
     color: var(--accent-coral);
 }
 
-.burger-menu nav button:hover{
+.burger-menu nav button:hover, .burger-menu nav button a:hover{
     color: var(--bg-darkest);
+}
+
+.burger-menu nav button:hover{
     background-color: white;
 }
 
