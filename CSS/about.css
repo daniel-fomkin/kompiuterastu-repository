@@ -12,7 +12,8 @@ body {
 main>section:nth-child(2) h1 {
     color: white;
     margin: 0;
-    padding: 0 0 45px;
+    padding: 88px 0 41px;
+    font-family: "H1-H2-H3";
     text-align: center;
 }
 
@@ -23,6 +24,7 @@ main>section:nth-child(2) {
 
 .dir_dis_1 {
     align-self: flex-start;
+    position: absolute;
 }
 
 .dir_dis_2 {
@@ -33,13 +35,12 @@ main>section:nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
 }
 
 .director {
     width: 327px;
-    height: 257px;
-    margin: 0 0 54px;
+    height: 253px;
+    margin: 0 0 52px;
     perspective: 1000px;
 }
 
@@ -85,11 +86,12 @@ main>section:nth-child(2) {
 
 .director h3 {
     color: var(--accent-blue);
-    margin: 0;
+    margin: 5px;
     font-weight: 700;
     line-height: 28px;
-    font-size: var(--font-h3);
+    font-size: var(--h1-h2-h3);
     font-style: normal;
+    padding: 3px 0 0 0;
 }
 
 .director p {
@@ -97,8 +99,9 @@ main>section:nth-child(2) {
     margin: 0;
     font-weight: 500;
     line-height: 25px;
-    font-size: var(--font-body-2);
+    font-size: var(--body-1-2);
     font-style: italic;
+    padding: 0 0 3px 0;
 }
 
 .director-back {
@@ -187,13 +190,14 @@ span {
 .director-back .add-button:hover {
     background-color: var(--accent-coral);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
 /* Header Start  */
-header section{
+header section {
     background-color: var(--bg-lightest);
     color: white;
     font-family: "body-1-2";
@@ -207,7 +211,7 @@ header section{
     background-position: right bottom;
 }
 
-header section h1{
+header section h1 {
     font-family: "H1-H2-H3";
     font-size: var(--font-h1);
     color: #FFF;
@@ -223,4 +227,5 @@ header section p {
     font-weight: 600;
     line-height: 186.667%;
 }
+
 /* Header End  */
