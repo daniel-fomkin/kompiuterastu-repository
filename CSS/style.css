@@ -231,7 +231,7 @@ li:hover, a:hover{
     color: var(--accent-coral);
 }
 
-.burger-menu nav button:hover, .burger-menu nav button a:hover{
+.burger-menu nav button:hover, .burger-menu nav button:hover a{
     color: var(--bg-darkest);
 }
 
