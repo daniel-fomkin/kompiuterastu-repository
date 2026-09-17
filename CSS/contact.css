@@ -1,3 +1,152 @@
-body{
+*{
     margin: 0;
 }
+
+/* Header Start */
+header section{
+    background-color: var(--bg-lightest);
+    color: white;
+    font-family: "body-1-2";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    padding: 32px var(--section-pad);
+    padding-bottom: 88px;
+    background-image: url(/assets//icons/contact-us-header-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+header section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h1, h2{
+    font-family: "H1-H2-H3";
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1{
+    font-size: var(--font-h1);
+    line-height: 100%
+}
+
+h2{
+    font-size: var(--font-h2);
+    line-height: 150%;
+    color: var(--accent-coral);
+}
+
+.contact-card{
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+
+.contact-card p{
+    font-size: var(--font-h3);
+    font-family: "H1-H2-H3";
+    font-weight: 700;
+    line-height: 155.556%;
+
+}
+
+.contact-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+header section form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+
+header section form input, header section form textarea{
+    resize: none;
+    padding: 0px 0px 16px 14px;
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 100%;
+    border: 0;
+    color: white;
+    font-family: "body-1-2";
+    opacity: 0.8;
+    border-bottom: 1px solid white;
+    font-size: var(--font-body-2);
+    line-height: 166.667%;
+    letter-spacing: -0.115px;
+    font-weight: 600;
+}
+
+header section form textarea{
+    padding-bottom: 9px;
+}
+
+header section form input::placeholder, header section form textarea::placeholder{
+    color: white;
+    opacity: 0.6;
+    font-family: "H1-H2-H3";
+    line-height: 166.667%;
+    font-size: var(--font-body-2);
+    letter-spacing: -0.115px;
+    font-weight: 600;
+}
+
+header section form .input-container:has(textarea){
+    height: 84px;
+}
+
+header section form input:focus, header section form textarea:focus{
+    outline: none;
+    border-bottom-color: var(--accent-blue);
+}
+
+header section form input:user-invalid, header section form textarea:user-invalid{
+    border-bottom-color: var(--accent-coral);
+}
+
+header section form .input-container:has(input:user-invalid)::after, header section form .input-container:has(textarea:user-invalid)::after{
+    content: "This field is required";
+    color: var(--accent-coral);
+    color: #F67E7E;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+header section form button{
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    border: 0;
+    font-family: "body-1-2";
+    line-height: 155.556%;
+    font-size: var(--font-body);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 9px 0px;
+    align-items: center;
+    border-radius: 24px;
+    color: var(--bg-darkest);
+    width: 123px;
+}
+/* Header End */
