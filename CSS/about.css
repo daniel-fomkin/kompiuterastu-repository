@@ -127,20 +127,31 @@ main>section:nth-child(2) h1 {
     left: 50%;
     bottom: -16px;
     transform: translateX(-50%);
-    width: 32px;
-    height: 32px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
-    background-color: var(--accent-coral);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 10;
+    z-index: 20;
+    margin: 0;
 }
 
-.add-button img {
-    width: 56px;
-    height: 56px;
-    margin: 0;
-    border-radius: 0;
+/* + */
+.director-front .add-button {
+    background-color: var(--accent-coral);
+}
+
+.director-front .add-button:hover {
+    background-color: var(--accent-blue);
+}
+
+/* X */
+.director-back .add-button {
+    background-color: var(--accent-blue);
+}
+
+.director-back .add-button:hover {
+    background-color: var(--accent-coral);
 }
