@@ -48,6 +48,13 @@
     border: 2px solid var(--bg-darkest);
     padding: 9px 33px;
     background-color: var(--accent-coral);
+    transition: 0.7s;
+}
+.contact__button:hover{
+    background-color: rgb(226, 100, 100);
+    box-shadow: 0 7px 20px rgba(26, 26, 36, 0.2); 
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .contact__img{
     position: absolute;
