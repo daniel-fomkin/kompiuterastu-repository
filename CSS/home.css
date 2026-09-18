@@ -8,14 +8,15 @@ header section{
     background-color: var(--bg-lightest);
     color: white;
     font-family: "body-1-2";
-    padding: 32px var(--section-pad);
+    padding: 8.5vw var(--section-pad);
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    padding-bottom: 197px;
+    gap: 4.8vw;
+    padding-bottom: 52.5vw;
     background-image: url(../assets/icons/home-bg-icon.svg);
+    background-size: 95.4vw;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center bottom;
 }
 
 header section h1{
@@ -36,6 +37,6 @@ header section p {
     font-size: var(--font-body-2);
     font-style: normal;
     font-weight: 600;
-    line-height: 186.667%;
+    line-height: 187.667%;
 }
 /* Header End  */
