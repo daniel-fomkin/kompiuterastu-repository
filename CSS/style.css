@@ -39,7 +39,7 @@ footer {
     align-items: center;
     background-color: var(--bg-darkest);
     color: white;
-    padding-bottom: 30px;
+    padding-bottom: 8vw;
     font-size: var(--font-body-2);
 }
 .foot-links a {
@@ -52,38 +52,51 @@ footer {
 }
 .foot-links {
     display: flex;
-    gap: 24px;
+    gap: 6.4vw;
+    justify-content: center;
 }
 .foot-socials {
     display: flex;
     justify-content: center;
-    margin-bottom: -26px;
+    gap: 16px;
 }
 .foot-socials a:hover svg path, svg:hover path {
     fill: var(--accent-coral);
 }
 .foot-socials > * {
-    margin: 5px;
-    padding: 3px;
+    padding: 1.7vw 0; 
 }
 .foot-socials {
-    margin-bottom: 3px;
+    margin-bottom: 2.5vw;
 }
 .foot-address, .foot-copyright {
     font-family: body-1-2;
     opacity: 0.6;
-    padding-top: 28px;
+    padding-top: 7.4vw;
     text-align: center;
-    line-height: 25px;
-    padding-bottom: 34px;
+    line-height: 166.667%;
+    padding-bottom: 9vw;
 }
 .foot-copyright {
     padding-top: 0;
 }
 .foot-logo {
-    padding-top: 65px;
-    padding-bottom: 23px;
-    padding-left: 5px;
+    padding-top: 17.3vw;
+    padding-bottom: 6.1vw;
+    padding-left: 1.3vw;
+}
+
+.foot-logo svg{
+    width: 6.4vw;
+}
+
+.foot-socials a{
+    display: flex;
+    align-items: center;
+}
+
+.foot-logo img{
+    width: 25.6vw;
 }
 /* FOOTER END*/
 
