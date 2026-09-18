@@ -179,7 +179,8 @@ header>nav button {
     flex-direction: column;
     gap: 10.4vw;
     background-image: url("../assets/icons/burger-menu-bg-icon.svg");
-    background-position: bottom right;
+    background-position: bottom -5.7vw right;
+    background-size: 26.6vw;
     background-repeat: no-repeat;
     position: relative;
 }
