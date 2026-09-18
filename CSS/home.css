@@ -14,8 +14,9 @@ header section{
     gap: 4.8vw;
     padding-bottom: 52.5vw;
     background-image: url(../assets/icons/home-bg-icon.svg);
+    background-size: 95.4vw;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center bottom;
 }
 
 header section h1{
