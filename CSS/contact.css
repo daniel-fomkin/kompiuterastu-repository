@@ -10,10 +10,11 @@ header section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 56px;
-    padding: 32px var(--section-pad);
-    padding-bottom: 88px;
+    gap: 14.9vw;
+    padding: 8.5vw var(--section-pad);
+    padding-bottom: 23.4vw;
     background-image: url(/assets//icons/contact-us-header-bg.svg);
+    background-size: 26.4vw;
     background-repeat: no-repeat;
     background-position: right bottom;
 }
@@ -21,16 +22,16 @@ header section{
 header section > div{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 10.6vw;
 }
 
 .contact-text-container{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 4.2vw;
 }
 
-h1, h2{
+header h1, h2{
     font-family: "H1-H2-H3";
     text-align: center;
     color: #FFF;
@@ -39,35 +40,41 @@ h1, h2{
     font-weight: 700;
 }
 
-h1{
+header h1{
     font-size: var(--font-h1);
     line-height: 100%
 }
 
-h2{
+header h2{
     font-size: var(--font-h2);
     line-height: 150%;
     color: var(--accent-coral);
 }
 
+.contact-card img{
+    width: 19.2vw;
+}
+
 .contact-card{
     display: flex;
-    gap: 23px;
+    gap: 6.1vw;
     align-items: center;
 }
 
-.contact-card p{
+.contact-card h3{
     font-size: var(--font-h3);
     font-family: "H1-H2-H3";
     font-weight: 700;
     line-height: 155.556%;
+    padding-top: 3px;
+    letter-spacing: -0.215px;
 
 }
 
 .contact-card-container{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 6.4vw;
 }
 
 header section form{
@@ -75,12 +82,12 @@ header section form{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 24px;
+    gap: 6.6vw;
 }
 
 header section form input, header section form textarea{
     resize: none;
-    padding: 0px 0px 16px 14px;
+    padding: 0px 0px 4.2vw 4.1vw;
     box-sizing: border-box;
     background-color: transparent;
     width: 100%;
@@ -96,7 +103,7 @@ header section form input, header section form textarea{
 }
 
 header section form textarea{
-    padding-bottom: 9px;
+    padding-bottom: 2.4vw;
 }
 
 header section form input::placeholder, header section form textarea::placeholder{
@@ -110,7 +117,7 @@ header section form input::placeholder, header section form textarea::placeholde
 }
 
 header section form .input-container:has(textarea){
-    height: 84px;
+    height: 22.4vw;
 }
 
 header section form input:focus, header section form textarea:focus{
@@ -125,11 +132,17 @@ header section form input:user-invalid, header section form textarea:user-invali
 header section form .input-container:has(input:user-invalid)::after, header section form .input-container:has(textarea:user-invalid)::after{
     content: "This field is required";
     color: var(--accent-coral);
-    color: #F67E7E;
-    font-size: 10px;
+    font-size: 2.6vw;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
+    display: block;
+    padding-top: 2.1vw;
+}
+
+header section form:has(textarea:user-invalid) button{
+    margin-top: 6.6vw;
+    box-sizing: content-box;
 }
 
 header section form button{
@@ -143,10 +156,12 @@ header section form button{
     font-weight: 600;
     display: flex;
     justify-content: center;
-    padding: 9px 0px;
+    padding: 2.6vw 0px;
     align-items: center;
     border-radius: 24px;
     color: var(--bg-darkest);
-    width: 123px;
+    width: 32.8vw;
 }
+
+
 /* Header End */
