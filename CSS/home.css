@@ -24,7 +24,7 @@
 .team-wrraper__card{
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 16px ;
 }
 .team-hero{
     display: flex;
@@ -54,14 +54,18 @@
 .team-wrraper__text{
     color: #FFF;
     text-align: center;
-    font: normal 600 15px/25px H1-H2-H3;
+    font: normal 600 15px/25px body-1-2;
     opacity: 0.8;
 }
 .team-wrraper__img{
     display: block;
     margin: auto;
 }
-
+.card__text-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
 /* Header Start  */
 header section{
     background-color: var(--bg-lightest);
