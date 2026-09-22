@@ -1,10 +1,10 @@
-html {
+html .directors {
     margin: 0;
     padding: 0;
     font-family: "H1-H2-H3", sans-serif;
 }
 
-body {
+body .directors {
     background-color: var(--bg-lighter);
     font-family: "body-1-2", sans-serif;
 }
