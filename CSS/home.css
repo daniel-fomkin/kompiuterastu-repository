@@ -110,7 +110,7 @@ header section p {
     display: flex;
     flex-direction: column;
     row-gap: 48px;
-    padding: 140px 24px 164px 24px;
+    padding: 140px 24px 165px 24px;
     background-color: var(--bg-lighter);
     background-image: 
     url(../assets/icons/Group\ 8-67.svg),
