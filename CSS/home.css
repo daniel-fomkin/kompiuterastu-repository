@@ -13,7 +13,7 @@
     flex-direction: column;
     row-gap:56px ;
     background-color: var(--bg-darker);
-    padding: 64px 24px;
+    padding: 64px var(--section-pad);
     position: relative;
 }
 .team-container__img{
@@ -39,7 +39,7 @@
 .team-hero__title{
     color: white;
     width: 240px;
-    font: normal 700 32px/32px  H1-H2-H3;
+    font: normal 700 var(--font-h2)/32px  H1-H2-H3;
 }
 .team-wrraper{
     display: flex;
@@ -48,13 +48,13 @@
 }
 .team-wrraper__title{
     color: var(--accent-coral);
-    font: normal 600 18px/28px H1-H2-H3;
+    font: normal 600 var(--font-h3)/28px H1-H2-H3;
     text-align: center;
 }
 .team-wrraper__text{
     color: #FFF;
     text-align: center;
-    font: normal 600 15px/25px body-1-2;
+    font: normal 600 var(--font-body-2)/25px body-1-2;
     opacity: 0.8;
 }
 .team-wrraper__img{
@@ -66,6 +66,7 @@
     flex-direction: column;
     row-gap: 8px;
 }
+/* TEAM SECTION END */
 /* Header Start  */
 header section{
     background-color: var(--bg-lightest);
