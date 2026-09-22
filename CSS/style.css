@@ -58,7 +58,7 @@ footer {
 .foot-socials {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 4.2vw;
 }
 .foot-socials a:hover svg path, svg:hover path {
     fill: var(--accent-coral);
