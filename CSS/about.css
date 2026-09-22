@@ -93,6 +93,10 @@ main>section:nth-child(2) {
     font-style: normal;
 }
 
+.director-back h3 {
+    padding: 2px 0 0 0;
+}
+
 .director p {
     color: white;
     font-weight: 500;
@@ -111,9 +115,10 @@ main>section:nth-child(2) {
 }
 
 .director-back p {
-    margin-top: 10px;
-    font-size: var(--font-body);
-    line-height: 18px;
+    width: 234.656px;
+    margin-top: 12px;
+    font-size: var(--font-body-2);
+    line-height: 166.667%;
     font-style: normal;
 }
 
@@ -121,7 +126,7 @@ span {
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-top: 12px;
+    margin-top: 20px;
 }
 
 .socials1,
