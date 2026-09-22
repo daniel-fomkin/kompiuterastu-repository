@@ -137,11 +137,13 @@ span {
 .socials2 {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .socials1 svg,
 .socials2 svg {
     display: block;
+    cursor: pointer;
 }
 
 .socials svg:hover path,
