@@ -7,6 +7,7 @@ html .directors {
 body .directors {
     background-color: var(--bg-lighter);
     font-family: "body-1-2", sans-serif;
+    position: relative;
 }
 
 main>section:nth-child(2) h1 {
@@ -29,12 +30,15 @@ main>section:nth-child(2) {
 
 .dir_dis_2 {
     align-self: flex-end;
+    position: absolute;
+    bottom: 0;
 }
 
 .directors_block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 65px;
 }
 
 .director {
