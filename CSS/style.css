@@ -36,26 +36,29 @@
 .contact{
     background-color: var(--accent-coral);
     position: relative;
-    padding: 83px var(--section-pad);
-    
+    padding: 22.1vw var(--section-pad);
     display: flex;
     flex-direction: column;
-    row-gap: 24px;
+    row-gap: 6.4vw;
     align-items: center;
+    background-image: url(../assets/icons/Group\ 8-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 53.3vw;
    
 }
 .contact__title{
     color:var(--bg-darkest) ;
-    font: normal 700 var(--font-h2)/32px H1-H2-H3;
+    font: normal 700 var(--font-h2)/100% H1-H2-H3;
     text-align: center;
 }
 .contact__button{
    
     color:var(--bg-darkest) ;
-    font: normal 600 var(--font-body)/28px body-1-2;
+    font: normal 600 var(--font-body)/155.556% body-1-2;
     border-radius: 24px;
     border: 2px solid var(--bg-darkest);
-    padding: 9px 31px 7px 31px;
+    padding: 2.4vw 8.27vw 1.87vw 8.27vw;
     background-color: var(--accent-coral);
     transition: 0.5s;
 }
@@ -64,11 +67,7 @@
     color: white;
     cursor: pointer;
 }
-.contact__img{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 
 /* FOOTER */
 footer {
