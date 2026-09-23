@@ -13,38 +13,32 @@ body .directors {
 main>section:nth-child(2) h1 {
     color: white;
     margin: 0;
-    padding: 88px 0 41px;
+    padding: 22.8vw 0 10.9vw;
     font-family: "H1-H2-H3";
     text-align: center;
+    font-size: var(--font-h2);
 }
 
 main>section:nth-child(2) {
     display: flex;
     flex-direction: column;
-}
-
-.dir_dis_1 {
-    align-self: flex-start;
-    position: absolute;
-}
-
-.dir_dis_2 {
-    align-self: flex-end;
-    position: absolute;
-    bottom: 0;
+    background-image: url("../assets/icons/Group\ 8-5.svg"), url("../assets//icons/Group\ 8\ Copy.svg");
+    background-repeat: no-repeat;
+    background-position: left top, bottom right;
+    background-size: 26.6vw, 39.2vw;
 }
 
 .directors_block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 65px;
+    padding: 0 0 17.3vw;
 }
 
 .director {
-    width: 327px;
-    height: 253px;
-    margin: 0 0 52px;
+    width: 87.2vw;
+    height: 67.4vw;
+    margin: 0 0 clamp(20px, 14vw, 60px);
     perspective: 1000px;
 }
 
@@ -67,7 +61,7 @@ main>section:nth-child(2) {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 32px;
+    padding: 8.5vw;
     text-align: center;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -81,8 +75,8 @@ main>section:nth-child(2) {
 }
 
 .director-front>img {
-    width: 96px;
-    height: 96px;
+    width: 25.6vw;
+    height: 25.6vw;
     border-radius: 50%;
     display: block;
     margin: 0 auto 8px;
@@ -90,9 +84,9 @@ main>section:nth-child(2) {
 
 .director h3 {
     color: var(--accent-blue);
-    padding: 10px 0 0 0;
+    padding: 2.6vw 0 0 0;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 155.556%;
     font-size: var(--font-h3);
     font-style: normal;
 }
@@ -104,7 +98,7 @@ main>section:nth-child(2) {
 .director p {
     color: white;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 166.667%;
     font-size: var(--font-body-2);
     font-style: italic;
 }
@@ -119,8 +113,8 @@ main>section:nth-child(2) {
 }
 
 .director-back p {
-    width: 234.656px;
-    margin-top: 12px;
+    width: 62.5vw;
+    margin-top: 2vw;
     font-size: var(--font-body-2);
     line-height: 166.667%;
     font-style: normal;
@@ -129,8 +123,8 @@ main>section:nth-child(2) {
 span {
     display: flex;
     align-items: center;
-    gap: 14px;
-    margin-top: 20px;
+    gap: 3.7vw;
+    margin-top: 6.5vw;
 }
 
 .socials1,
@@ -152,10 +146,10 @@ span {
 }
 
 .add-button {
-    width: 56px;
-    height: 56px;
+    width: 14.9vw;
+    height: 14.9vw;
     margin-top: auto;
-    margin-bottom: -60px;
+    margin-bottom: -16vw;
     border: none;
     border-radius: 50%;
     display: flex;
@@ -164,19 +158,9 @@ span {
     cursor: pointer;
 }
 
-.add-button p {
-    margin: 0;
-    padding: 0;
+.director-back .add-button svg {
     color: var(--bg-darkest);
-    font-size: 32px;
-    font-style: normal;
-    line-height: 1;
-    transform: translateY(-3px);
-}
-
-.director-back .add-button p {
-    color: var(--bg-darkest);
-    transform: translateY(-2px) translateX(3px) rotate(45deg);
+    transform: rotate(45deg);
 }
 
 /* + */
