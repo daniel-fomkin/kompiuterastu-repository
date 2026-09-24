@@ -268,8 +268,25 @@ header section p {
     height: 5.3123vw;
 }
 
+/* Tablet Media Start */
 @media screen and (min-width: 768px) {
-    
+    /* Header Start */
+    header section{
+        background-image: url("../assets/icons/about-header-bg-icon-tablet.svg");
+        background-size: 13vw;
+        padding-top: 5.9vw;
+        padding-bottom: 14.5vw;
+        align-items: center;
+        gap: 2.7vw;
+    }
+
+    header section p{
+        width: 59.5vw;
+        line-height: 186.667%;
+    }
+    /* Header End */
+
+    /* Client Section Start */
     .client-section{
         background-image: url("../assets/icons/Group 8-220.svg");
         background-repeat: no-repeat;
@@ -309,5 +326,7 @@ header section p {
         width: 7.9427vw;
         height: 3.6458vw;
     }
+    /* Client Section End */
+
 }
-/* Client Section End */
+/* Tablet Media End */
