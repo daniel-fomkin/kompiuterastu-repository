@@ -176,7 +176,7 @@ header section p {
 }
 .person-info__specialty{
     color: white;
-    font: italic 500 clamp(5px, 3.4vw, 13px)/138.462% body-1-2;
+    font: italic 500 clamp(5px, 3.4vw, 13px)/138.462% italic-body;
 }
 .person-info__img{
     width: 16.5vw;
@@ -235,7 +235,6 @@ header section p {
     .stories-card__text{
         width: 73vw;
         word-spacing: normal;
-        letter-spacing: -0.075px;
         text-align: center;
     }
 
