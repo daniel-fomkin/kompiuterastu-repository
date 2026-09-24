@@ -330,7 +330,7 @@ a:hover {
 
 
 /* Tablet Media Start */
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
     :root {
         --font-h1: clamp(40px, 8.3vw, 64px);
         --font-h2: clamp(10px, 4.1vw, 32px);
