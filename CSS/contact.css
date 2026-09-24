@@ -163,3 +163,72 @@ header section form button{
 
 
 /* Header End */
+
+/* Tablet Media Start */
+@media screen and (min-width: 768px) {
+    /* Header Start */
+    header section{
+        padding: 5.9vw 15vw;
+        padding-bottom: 14.8vw;
+        gap: 8.75vw;
+        background-image: url("../assets/icons/contact-us-top-bg-tablet.svg"), url("../assets/icons/contact-us-bg-tablet.png");
+        background-position: top 5.3vw left, bottom right;
+        background-size: 13vw;
+    }
+
+    .contact-text-container{
+        gap: 2.5vw;
+    }
+
+    .contact-card img{
+        width: 9.375vw;
+    }
+
+    header section > div{
+        width: 100%;
+        display: flex;
+        gap: 3.125vw;
+        padding: 0 1.5vw;
+    }
+
+    .contact-card{
+        gap: 3vw;
+    }
+
+    .contact-card-container{
+        gap: 1vw;
+    }
+
+    .contact-card h3{
+        letter-spacing: 0.2px;
+    }
+
+    header section form{
+        gap: 3.3vw;
+    }
+
+    header section form input, header section form textarea{
+        padding: 0px 0px 1.9vw 1.8vw;
+    }
+
+    header section form textarea{
+        padding-bottom: 1vw;
+    }
+
+    header section form .input-container:has(textarea){
+        height: fit-content;
+    }
+
+    header section form button{
+        width: 16vw;
+        padding: 1.1vw 4.1vw;
+        margin-top: -4px;
+    }
+
+    header section form .input-container:has(input:user-invalid)::after, header section form .input-container:has(textarea:user-invalid)::after{
+        font-size: 1.3vw;
+    }
+    /* Header End */
+}
+
+/* Tablet Media Start */
