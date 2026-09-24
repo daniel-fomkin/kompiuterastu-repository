@@ -275,7 +275,7 @@ header section p {
         background-repeat: no-repeat;
         background-size: 26.6vw;
         padding: 13.2042vw var(--section-pad);
-        gap: 5.7158vw;
+        gap: 3.0158vw;
     }
 
     .client-section .client-logo-container{
