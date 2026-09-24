@@ -150,6 +150,13 @@ svg:hover path {
     width: 25.6vw;
 }
 
+.foot-three {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 /* FOOTER END*/
 
 
@@ -404,6 +411,62 @@ a:hover {
 
 
     /* Navigation End */
+
+    /* Footer */
+
+    footer {
+        padding: 0 40px;
+        padding-bottom: 2.5vh;
+    }
+
+    footer a svg {
+        width: 3.1vw;
+    }
+
+    .foot-first-half {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .foot-logo {
+        padding-top: 56px;
+        padding-left: 0;
+    }
+    .foot-logo img {
+        width: 96px;
+    }
+    .foot-three {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .foot-links {
+        padding-top: 4px;
+        gap: 3vw;
+    }
+
+    .foot-address {
+        text-align: end;
+        padding-bottom: 0;
+    }
+
+    .foot-socials {
+        padding-top: 20px;
+        gap: 2vw;
+    }
+
+    .foot-one {
+        margin-bottom: -50px;
+    }
+
+    .foot-copyright {
+        padding-top: 35px;
+        padding-bottom: 0;
+    }
+
+    /* Footer End*/
+
 }
 
 /* Tablet Media End */
