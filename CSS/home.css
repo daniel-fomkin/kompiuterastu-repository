@@ -15,14 +15,12 @@
     row-gap: 14.9vw;
     background-color: var(--bg-darker);
     padding: 17vw var(--section-pad);
-    position: relative;
+    background-image: url(../assets/icons/Group\ 8.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px;
 }
-.team-container__img{
-    position: absolute;
-    width: 26.6vw;
-    right: 0;
-    top: 0; 
-}
+
 .team-wrraper__card{
     display: flex;
     flex-direction: column;
@@ -60,8 +58,8 @@
     opacity: 0.8;
 }
 .team-wrraper__img{
-    display: block;
-    margin: auto;
+    /* display: block;
+    margin: auto; */
     width: 19.2vw;
 }
 .card__text-info{
@@ -247,5 +245,45 @@ header section p {
         row-gap: 2vw;
     }
     /* Succies Stories End */
+    /* Team Section Start */
+    .team-container{
+        row-gap: 64px;
+        padding: 100px 98px;
+    }
+    
+    .team-wrraper__card{
+        flex-direction: row;
+        column-gap: 22px;
+        
+    }
+    .card__text-info{
+        align-items: flex-start;
+        row-gap: 14px;
+    }
+    .team-wrraper{
+        row-gap: 32px;
+    }
+    .team-wrraper__text{
+        text-align: start;
+        letter-spacing: -0.0321em;
+        line-height: 165%;
+    }
+    .team-wrraper__img{
+        width: 72px;
+        height: 72px;
+        /* display: inline-block;
+        margin: 0; */
+    }
+    .team-hero{
+        row-gap: 32px;
+    }
+    .team-hero__divider{
+        width: 50px;
+        height: 2px;
+    }
+    .team-hero__title{
+        letter-spacing: 0.006em;
+        line-height: 102%;
+    }
 }
 /* Tablet Media End */
