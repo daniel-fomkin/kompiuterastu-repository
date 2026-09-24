@@ -247,39 +247,38 @@ header section p {
     /* Succies Stories End */
     /* Team Section Start */
     .team-container{
-        row-gap: 64px;
-        padding: 100px 98px;
+        row-gap: 8.3vw;
+        padding: 13vw 12.7vw;
     }
     
     .team-wrraper__card{
         flex-direction: row;
-        column-gap: 22px;
+        column-gap: 2.9vw;
         
     }
     .card__text-info{
         align-items: flex-start;
-        row-gap: 14px;
+        row-gap: 1.8vw;
     }
     .team-wrraper{
-        row-gap: 32px;
+        row-gap: 4.17vw;
     }
     .team-wrraper__text{
         text-align: start;
-        letter-spacing: -0.0321em;
+        letter-spacing: -0.03133em;
         line-height: 165%;
     }
     .team-wrraper__img{
-        width: 72px;
-        height: 72px;
-        /* display: inline-block;
-        margin: 0; */
+        width: 9.3vw;
+        height: 9.3vw;
+        
     }
     .team-hero{
-        row-gap: 32px;
+        row-gap: 4.17vw;
     }
     .team-hero__divider{
-        width: 50px;
-        height: 2px;
+        width: 6.5vw;
+        height: 0.3vw;
     }
     .team-hero__title{
         letter-spacing: 0.006em;
