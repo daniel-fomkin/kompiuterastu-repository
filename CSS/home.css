@@ -189,6 +189,7 @@ header section p {
 
 /* Tablet Media Start */
 @media screen and (min-width: 768px) {
+    /* Header Start */
     header section{
         padding-top: 6.25vw;
         padding-bottom: 33.3vw;
@@ -206,5 +207,45 @@ header section p {
         width: 59.5vw;
         line-height: 186.667%;
     }
+    /* Header End */
+
+    /* Succies Stories Start */
+    .success-stories-container{
+        padding: 13vw 12.8vw 13.4vw 12.5vw;
+        align-items: center;
+        row-gap: 6.25vw;
+        background-size: 19.1vw, 26.6vw;
+    }
+
+    .success-stories-container__title{
+        line-height: 102%;
+        letter-spacing: 0.3px;
+    }
+
+    .stories-card{
+        padding-top: 4.6vw;
+        background-size: 8.7vw;
+        row-gap: 2vw;
+    }
+
+    .stories-cards{
+        row-gap: 6.6vw;
+    }
+
+    .stories-card__text{
+        width: 73vw;
+        word-spacing: normal;
+        letter-spacing: -0.075px;
+        text-align: center;
+    }
+
+    .person-info__img{
+        width: 8vw;
+    }
+
+    .person-bio{
+        row-gap: 2vw;
+    }
+    /* Succies Stories End */
 }
 /* Tablet Media End */
