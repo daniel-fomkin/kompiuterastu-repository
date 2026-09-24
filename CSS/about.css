@@ -97,6 +97,7 @@ main>section:nth-child(2) {
 
 .director p {
     color: white;
+    font-family: italic-body;
     font-weight: 500;
     line-height: 166.667%;
     font-size: var(--font-body-2);

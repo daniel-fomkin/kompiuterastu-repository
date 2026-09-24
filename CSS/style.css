@@ -26,6 +26,12 @@
     src: url(../assets/fonts/Livvic-SemiBold.ttf);
 }
 
+
+@font-face {
+    font-family: italic-body;
+    src: url(../assets/fonts/Livvic-Italic.ttf);
+}
+
 /* FONTS END */
 
 * {
