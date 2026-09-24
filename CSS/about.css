@@ -103,6 +103,10 @@ main>section:nth-child(2) {
     font-style: italic;
 }
 
+.director .director-front p{
+    font-family: italic-body;
+}
+
 .director-back {
     transform: rotateY(180deg);
     background-color: var(--bg-darkest);
@@ -269,7 +273,90 @@ header section p {
 }
 
 /* Tablet Media Start */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
+    /* Directors Section Start */
+    main>section:nth-child(2) h1{
+        padding: 12.5vw 0 5.7vw;
+    }
+
+    main>section:nth-child(2){
+        background-image: url("../assets/icons/about-section1-bg-tablet.png"), url("../assets//icons/Group\ 8\ Copy.svg");
+        background-size: 13vw, 19.1vw;
+        background-repeat: no-repeat;
+    }
+
+    .directors_block{
+        display: grid;
+        grid-template-columns: 36.5vw 36.5vw;
+        justify-content: center;
+        column-gap: 1.4vw;
+        row-gap: 2vw;
+        padding-bottom: 9vw;
+    }
+
+    .director{
+        width: 36.5vw;
+        height: 33vw;
+    }
+
+    .director h3{
+        padding-top: 1.2vw;
+        letter-spacing: 0.25px;
+    }
+
+    .director-back h3{
+        padding: 0.5vw;
+    }
+
+    .director-back{
+        justify-content: flex-start;
+    }
+
+    .director-front, .director-back{
+        width: 36.5vw;
+        height: 33vw;
+        padding: 4.1vw;
+        box-sizing: border-box;
+    }
+
+    .add-button{
+        margin-top: 0;
+    }
+
+    .add-button{
+        width: 7.2vw;
+        height: 7.2vw;
+        margin-top: 3.6vw;
+    }
+
+    .add-button svg{
+        width: 2vw;
+        height: auto;
+    }
+
+    .director-front>img{
+        width: 12.5vw;
+        height: auto;
+    }
+
+    .director-back p{
+        width: 30.3vw;
+        margin-top: 0.9vw;
+    }
+
+    .socials1 svg{
+        width: 3.125vw;
+    } 
+    .socials2 svg{
+        width: 2.6vw;
+    }
+
+    .socials span{
+        margin-top: 1.5vw;
+        gap: 2vw;
+    }
+    /* Directors Section End */
+    
     /* Header Start */
     header section{
         background-image: url("../assets/icons/about-header-bg-icon-tablet.svg");
