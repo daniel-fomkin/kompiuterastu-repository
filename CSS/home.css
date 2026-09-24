@@ -12,60 +12,62 @@
 .team-container{
     display: flex;
     flex-direction: column;
-    row-gap:56px ;
+    row-gap: 14.9vw;
     background-color: var(--bg-darker);
-    padding: 64px var(--section-pad);
+    padding: 17vw var(--section-pad);
     position: relative;
 }
 .team-container__img{
     position: absolute;
+    width: 26.6vw;
     right: 0;
     top: 0; 
 }
 .team-wrraper__card{
     display: flex;
     flex-direction: column;
-    row-gap: 16px ;
+    row-gap: 4.2vw;
 }
 .team-hero{
     display: flex;
     flex-direction: column;
-    row-gap: 32px;
+    row-gap: 8.5vw;
 }
 .team-hero__divider{
     background-color: var(--accent-coral);
-    width: 50px;
-    height: 4px;
+    width: 13.3vw;
+    height: 1vw;
 }
 .team-hero__title{
     color: white;
-    width: 240px;
-    font: normal 700 var(--font-h2)/32px  H1-H2-H3;
+    width: 64vw;
+    font: normal 700 var(--font-h2)/100%  H1-H2-H3;
 }
 .team-wrraper{
     display: flex;
     flex-direction: column;
-    row-gap: 48px;
+    row-gap: 12.8vw;
 }
 .team-wrraper__title{
     color: var(--accent-coral);
-    font: normal 600 var(--font-h3)/28px H1-H2-H3;
+    font: normal 600 var(--font-h3)/158.556% H1-H2-H3;
     text-align: center;
 }
 .team-wrraper__text{
     color: #FFF;
     text-align: center;
-    font: normal 600 var(--font-body-2)/25px body-1-2;
+    font: normal 600 var(--font-body-2)/166.667% body-1-2;
     opacity: 0.8;
 }
 .team-wrraper__img{
     display: block;
     margin: auto;
+    width: 19.2vw;
 }
 .card__text-info{
     display: flex;
     flex-direction: column;
-    row-gap: 8px;
+    row-gap: 2.45vw;
 }
 /* TEAM SECTION END */
 /* Header Start  */
