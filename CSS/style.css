@@ -26,10 +26,20 @@
     src: url(../assets/fonts/Livvic-SemiBold.ttf);
 }
 
+
+@font-face {
+    font-family: italic-body;
+    src: url(../assets/fonts/Livvic-Italic.ttf);
+}
+
 /* FONTS END */
 
 * {
     margin: 0;
+}
+
+.tablet{
+    display: none;
 }
 
 /* CONTACT SECTION */
@@ -348,6 +358,10 @@ a:hover {
 
     .not-mobile {
         display: flex;
+    }
+
+    .tablet{
+        display: block;
     }
 
     /* Navigation Start */
