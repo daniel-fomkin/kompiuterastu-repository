@@ -275,39 +275,39 @@ header section p {
         background-repeat: no-repeat;
         background-size: 26.6vw;
         padding: 13.2042vw var(--section-pad);
-        gap: 3.0158vw;
+        gap: 6.0158vw;
     }
 
     .client-section .client-logo-container{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 1px;
+        gap: 6.5104vw;
     }
 
-    .client-logo-container img .the-verge{
-        width: 103px;
-        height: 17px;
+    .client-logo-container .the-verge{
+        width: 13.4115vw;
+        height: 2.2135vw;
     }
 
-    .client-logo-container img .the-jakara-post{
-        width: 114px;
-        height: 14px;
+    .client-logo-container .the-jakara-post{
+        width: 14.8438vw;
+        height: 1.8229vw;
     }
 
-    .client-logo-container img .the-guardian{
-        width: 112px;
-        height: 17px;
+    .client-logo-container .the-guardian{
+        width: 14.5833vw;
+        height: 2.2135vw;
     }
 
-    .client-logo-container img .techradar{
-        width: 103px;
-        height: 17px;
+    .client-logo-container .techradar{
+        width: 13.4115vw;
+        height: 2.2135vw;
     }
 
-    .client-logo-container img .gadgets{
-        width: 61px;
-        height: 28px;
+    .client-logo-container .gadgets{
+        width: 7.9427vw;
+        height: 3.6458vw;
     }
 }
 /* Client Section End */
