@@ -249,7 +249,7 @@ header section p {
     padding: 87px var(--section-pad);
     display: flex;
     flex-direction: column;
-    gap: 62px;
+    gap: 16.5333vw;
     align-items: center;
 }
 
@@ -264,7 +264,7 @@ header section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 57px;
+    gap: 15.2000vw;
 }
 
 .client-section .client-logo-container img{
@@ -275,12 +275,12 @@ header section p {
 }
 
 .client-section .the-verge{
-    width: 146.561px;
-    height: 24.19px;
+    width: 39.0829vw;
+    height: 6.4507vw;
 }
 
 .client-section .the-jakara-post{
-    width: 162.213px;
-    height: 19.921px;
+    width: 43.2568vw;
+    height: 5.3123vw;
 }
 /* Client Section End */
