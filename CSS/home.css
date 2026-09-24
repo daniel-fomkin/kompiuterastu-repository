@@ -235,6 +235,7 @@ header section p {
     .stories-card__text{
         width: 73vw;
         word-spacing: normal;
+        letter-spacing: -0.075px;
         text-align: center;
     }
 
