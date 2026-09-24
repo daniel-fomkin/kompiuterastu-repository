@@ -469,14 +469,14 @@ a:hover {
     .contact{
         flex-direction: row;
         justify-content: space-between;
-        column-gap: 84px;
-        background-size:200px;
-        padding: 75px 98px 74px 99px;
+        column-gap: 10.9vw;
+        background-size:26vw;
+        padding: 9.8vw 98px 9.6vw 12.9vw;
     }
     .contact__button{
-        padding: 9px 33px 8px 30px;
+        padding: 1.18vw 4.3vw 1vw 3.8vw;
     }
-    
+
 }
 
 /* Tablet Media End */
