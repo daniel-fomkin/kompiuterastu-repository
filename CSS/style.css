@@ -38,6 +38,10 @@
     margin: 0;
 }
 
+.tablet{
+    display: none;
+}
+
 /* CONTACT SECTION */
 .contact {
     background-color: var(--accent-coral);
@@ -355,6 +359,10 @@ a:hover {
 
     .not-mobile {
         display: flex;
+    }
+
+    .tablet{
+        display: block;
     }
 
     /* Navigation Start */
