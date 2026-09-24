@@ -186,3 +186,25 @@ header section p {
 }
 
 /* SUCCESS STORIES END  */
+
+/* Tablet Media Start */
+@media screen and (min-width: 768px) {
+    header section{
+        padding-top: 6.25vw;
+        padding-bottom: 33.3vw;
+        background-size: 46.6vw;
+        gap: 3.125vw;
+        align-items: center;
+    }
+
+    header section h1{
+        line-height: 88%;
+        width: 100%;
+    }
+
+    header section p{
+        width: 59.5vw;
+        line-height: 186.667%;
+    }
+}
+/* Tablet Media End */
