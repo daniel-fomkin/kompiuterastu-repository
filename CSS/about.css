@@ -238,3 +238,49 @@ header section p {
 }
 
 /* Header End  */
+
+
+/* Client Section Start */
+.client-section{
+    background-color: var(--bg-darker);
+    background-image: url("../assets/icons/client-bg-img.svg");
+    background-repeat: no-repeat;
+    background-size: 26.6vw;
+    padding: 87px var(--section-pad);
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+    align-items: center;
+}
+
+.client-section h2{
+    text-align: center;
+    line-height: 100%;
+    font-family: "H1-H2-H3";
+    font-size: var(--font-h2);
+}
+
+.client-section .client-logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 57px;
+}
+
+.client-section .client-logo-container img{
+    filter: brightness(0) invert(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-section .the-verge{
+    width: 146.561px;
+    height: 24.19px;
+}
+
+.client-section .the-jakara-post{
+    width: 162.213px;
+    height: 19.921px;
+}
+/* Client Section End */
