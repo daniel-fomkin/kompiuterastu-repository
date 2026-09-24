@@ -230,7 +230,7 @@ header section p {
     background-image: url("../assets/icons/client-bg-img.svg");
     background-repeat: no-repeat;
     background-size: 26.6vw;
-    padding: 87px var(--section-pad);
+    padding: 23.2000vw var(--section-pad);
     display: flex;
     flex-direction: column;
     gap: 16.5333vw;
@@ -267,7 +267,6 @@ header section p {
     width: 43.2568vw;
     height: 5.3123vw;
 }
-/* Client Section End */
 
 /* Tablet Media Start */
 @media screen and (min-width: 768px){
@@ -369,6 +368,48 @@ header section p {
         line-height: 186.667%;
     }
     /* Header End */
-}
 
+    /* Client Section Start */
+    .client-section{
+        background-image: url("../assets/icons/Group 8-220.svg");
+        background-repeat: no-repeat;
+        background-size: 26.6vw;
+        padding: 13.2042vw var(--section-pad);
+        gap: 6.0158vw;
+    }
+
+    .client-section .client-logo-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6.5104vw;
+    }
+
+    .client-logo-container .the-verge{
+        width: 13.4115vw;
+        height: 2.2135vw;
+    }
+
+    .client-logo-container .the-jakara-post{
+        width: 14.8438vw;
+        height: 1.8229vw;
+    }
+
+    .client-logo-container .the-guardian{
+        width: 14.5833vw;
+        height: 2.2135vw;
+    }
+
+    .client-logo-container .techradar{
+        width: 13.4115vw;
+        height: 2.2135vw;
+    }
+
+    .client-logo-container .gadgets{
+        width: 7.9427vw;
+        height: 3.6458vw;
+    }
+    /* Client Section End */
+
+}
 /* Tablet Media End */
