@@ -105,17 +105,19 @@ header section p {
     line-height: 187.667%;
 }
 /* Header End  */
+
 /* SUCCESS STORIES Start  */
 .success-stories-container{
     display: flex;
     flex-direction: column;
-    row-gap: 48px;
-    padding: 140px 24px 165px 24px;
+    row-gap: 12.8vw;
+    padding: 37.3vw var(--section-pad) 43.8vw 6.4vw;
     background-color: var(--bg-lighter);
     background-image: 
     url(../assets/icons/Group\ 8-67.svg),
     url(../assets/icons/Group\ 8-666.svg);
     background-position: left top,bottom right;
+    background-size: 39.2vw, 53.3vw;
     background-repeat: no-repeat;
 }
 .success-stories-container * {
@@ -125,7 +127,7 @@ header section p {
 .success-stories-container__title{
     text-align: center;
     color: white;
-    font: normal 700 var(--font-h2)/32px H1-H2-H3;
+    font: normal 700 var(--font-h2)/100% H1-H2-H3;
 }
 .success-stories-container__title--blue{
     color: var(--accent-blue);
@@ -133,30 +135,32 @@ header section p {
 .stories-cards{
     display: flex;
     flex-direction: column;
-    row-gap: 48px;
+    row-gap: 12.8vw;
 }
 .stories-card{
-    padding-top: 36px;
+    padding-top: 9.6vw;
     position: relative;
     display: flex;
     flex-direction: column;
-    row-gap: 16px; 
+    row-gap: 4.3vw; 
     background-image: url(../assets/icons/quote.svg);
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: 17.8vw;
 }
 .stories-card__img{
-    width: 67px; 
+    width: 17.8vw; 
 }
 .stories-card__text{
     color: white;
     text-align: center;
-    font: normal 600 var(--font-body-2)/25px body-1-2;
+    font: normal 600 var(--font-body-2)/166.667% body-1-2;
+    word-spacing: -0.4px;
 }
 .person-bio{
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 4.3vw;
 }
 .person-info{
     row-gap: 2px;
@@ -166,14 +170,14 @@ header section p {
 }
 .person-info__full-name{
     color: var(--accent-blue);
-    font: normal 700 var(--font-body)/28px H1-H2-H3;
+    font: normal 700 var(--font-body)/159.556% H1-H2-H3;
 }
 .person-info__specialty{
     color: white;
-    font: italic 500 13px/18px body-1-2;
+    font: italic 500 clamp(5px, 3.4vw, 13px)/138.462% body-1-2;
 }
 .person-info__img{
-    width: 62px;
+    width: 16.5vw;
     border-radius: 62px;
     outline: 2px solid #C4FFFE;
     align-self: center;
