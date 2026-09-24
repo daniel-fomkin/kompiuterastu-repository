@@ -35,7 +35,6 @@
 /* CONTACT SECTION */
 .contact {
     background-color: var(--accent-coral);
-    position: relative;
     padding: 22.1vw var(--section-pad);
     display: flex;
     flex-direction: column;
@@ -466,7 +465,18 @@ a:hover {
     }
 
     /* Footer End*/
-
+    /* CONTACT START */
+    .contact{
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 84px;
+        background-size:200px;
+        padding: 75px 98px 74px 99px;
+    }
+    .contact__button{
+        padding: 9px 33px 8px 30px;
+    }
+    
 }
 
 /* Tablet Media End */
