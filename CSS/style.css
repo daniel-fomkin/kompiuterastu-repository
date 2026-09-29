@@ -141,6 +141,8 @@ svg:hover path {
 }
 
 .foot-logo {
+    display: flex;
+    justify-content: center;
     padding-top: 17.3vw;
     padding-bottom: 6.1vw;
     padding-left: 1.3vw;
@@ -442,6 +444,7 @@ a:hover {
         justify-content: space-between;
     }
     .foot-logo {
+        justify-content: left;
         padding-top: 56px;
         padding-left: 0;
     }
