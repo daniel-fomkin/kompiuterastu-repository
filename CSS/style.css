@@ -497,3 +497,38 @@ a:hover {
 }
 
 /* Tablet Media End */
+
+/* Desktop Media Start */
+@media screen and (min-width: 1440px) {
+    :root {
+        --font-h1: clamp(80px, 6.95vw, 100px);
+        --font-h2: clamp(10px, 3.3vw, 48px);
+        --font-h3: clamp(4px, 1.25vw, 18px);
+        --font-body: clamp(4px, 1.25vw, 18px);
+        --font-body-2: clamp(3px, 1vw, 15px);
+        --section-pad: 11.46vw;
+    }
+    
+    /* Navigation Start */
+    header>nav{
+        padding: 5.1vw 11.4vw;
+    }
+
+    .left-navbar-container{
+        gap: 5.6vw;
+    }
+
+    .left-navbar-container ul{
+        gap: 2.9vw;
+    }
+
+    .left-navbar-container>img{
+        width: 11.1vw;
+    }
+
+    header>nav button{
+        padding: 0.6vw 2.29vw 0.5vw 2vw;
+    }
+    /* Navigation End */
+}
+/* Desktop Media End */
