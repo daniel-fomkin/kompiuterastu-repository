@@ -11,7 +11,7 @@ buttons.forEach(button => {
 document.querySelectorAll('.director').forEach(director => {
     const frontButton = director.querySelector('.director-front .add-button');
     const backButton = director.querySelector('.director-back .add-button');
-    
+
     const inner = director.querySelector('.director-inner');
     frontButton.addEventListener('click', function (event) {
         event.stopPropagation();

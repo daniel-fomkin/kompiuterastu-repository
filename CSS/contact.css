@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
 }
 
 /* Header Start */
-header section{
+header section {
     background-color: var(--bg-lightest);
     color: white;
     font-family: "body-1-2";
@@ -19,19 +19,20 @@ header section{
     background-position: right bottom;
 }
 
-header section > div{
+header section>div {
     display: flex;
     flex-direction: column;
     gap: 10.6vw;
 }
 
-.contact-text-container{
+.contact-text-container {
     display: flex;
     flex-direction: column;
     gap: 4.2vw;
 }
 
-header h1, h2{
+header h1,
+h2 {
     font-family: "H1-H2-H3";
     text-align: center;
     color: #FFF;
@@ -40,28 +41,28 @@ header h1, h2{
     font-weight: 700;
 }
 
-header h1{
+header h1 {
     font-size: var(--font-h1);
     line-height: 100%
 }
 
-header h2{
+header h2 {
     font-size: var(--font-h2);
     line-height: 150%;
     color: var(--accent-coral);
 }
 
-.contact-card img{
+.contact-card img {
     width: 19.2vw;
 }
 
-.contact-card{
+.contact-card {
     display: flex;
     gap: 6.1vw;
     align-items: center;
 }
 
-.contact-card h3{
+.contact-card h3 {
     font-size: var(--font-h3);
     font-family: "H1-H2-H3";
     font-weight: 700;
@@ -69,13 +70,13 @@ header h2{
     padding-top: 3px;
 }
 
-.contact-card-container{
+.contact-card-container {
     display: flex;
     flex-direction: column;
     gap: 6.4vw;
 }
 
-header section form{
+header section form {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -83,7 +84,8 @@ header section form{
     gap: 6.6vw;
 }
 
-header section form input, header section form textarea{
+header section form input,
+header section form textarea {
     resize: none;
     padding: 0px 0px 4.2vw 4.1vw;
     box-sizing: border-box;
@@ -100,11 +102,12 @@ header section form input, header section form textarea{
     font-weight: 600;
 }
 
-header section form textarea{
+header section form textarea {
     padding-bottom: 2.4vw;
 }
 
-header section form input::placeholder, header section form textarea::placeholder{
+header section form input::placeholder,
+header section form textarea::placeholder {
     color: white;
     opacity: 0.6;
     font-family: "H1-H2-H3";
@@ -114,20 +117,23 @@ header section form input::placeholder, header section form textarea::placeholde
     font-weight: 600;
 }
 
-header section form .input-container:has(textarea){
+header section form .input-container:has(textarea) {
     height: 22.4vw;
 }
 
-header section form input:focus, header section form textarea:focus{
+header section form input:focus,
+header section form textarea:focus {
     outline: none;
     border-bottom-color: var(--accent-blue);
 }
 
-header section form input:user-invalid, header section form textarea:user-invalid{
+header section form input:user-invalid,
+header section form textarea:user-invalid {
     border-bottom-color: var(--accent-coral);
 }
 
-header section form .input-container:has(input:user-invalid)::after, header section form .input-container:has(textarea:user-invalid)::after{
+header section form .input-container:has(input:user-invalid)::after,
+header section form .input-container:has(textarea:user-invalid)::after {
     content: "This field is required";
     color: var(--accent-coral);
     font-size: 2.6vw;
@@ -138,12 +144,12 @@ header section form .input-container:has(input:user-invalid)::after, header sect
     padding-top: 2.1vw;
 }
 
-header section form:has(textarea:user-invalid) button{
+header section form:has(textarea:user-invalid) button {
     margin-top: 6.6vw;
     box-sizing: content-box;
 }
 
-header section form button{
+header section form button {
     cursor: pointer;
     box-sizing: border-box;
     background-color: white;
@@ -166,8 +172,9 @@ header section form button{
 
 /* Tablet Media Start */
 @media screen and (min-width: 768px) {
+
     /* Header Start */
-    header section{
+    header section {
         padding: 5.9vw 15vw;
         padding-bottom: 14.8vw;
         gap: 8.75vw;
@@ -176,58 +183,61 @@ header section form button{
         background-size: 13vw;
     }
 
-    .contact-text-container{
+    .contact-text-container {
         gap: 2.5vw;
     }
 
-    .contact-card img{
+    .contact-card img {
         width: 9.375vw;
     }
 
-    header section > div{
+    header section>div {
         width: 100%;
         display: flex;
         gap: 3.125vw;
         padding: 0 1.5vw;
     }
 
-    .contact-card{
+    .contact-card {
         gap: 3vw;
     }
 
-    .contact-card-container{
+    .contact-card-container {
         gap: 1vw;
     }
 
-    .contact-card h3{
+    .contact-card h3 {
         letter-spacing: 0.2px;
     }
 
-    header section form{
+    header section form {
         gap: 3.3vw;
     }
 
-    header section form input, header section form textarea{
+    header section form input,
+    header section form textarea {
         padding: 0px 0px 1.9vw 1.8vw;
     }
 
-    header section form textarea{
+    header section form textarea {
         padding-bottom: 1vw;
     }
 
-    header section form .input-container:has(textarea){
+    header section form .input-container:has(textarea) {
         height: fit-content;
     }
 
-    header section form button{
+    header section form button {
         width: 16vw;
         padding: 1.1vw 4.1vw;
         margin-top: -4px;
     }
 
-    header section form .input-container:has(input:user-invalid)::after, header section form .input-container:has(textarea:user-invalid)::after{
+    header section form .input-container:has(input:user-invalid)::after,
+    header section form .input-container:has(textarea:user-invalid)::after {
         font-size: 1.3vw;
     }
+
     /* Header End */
 }
 
