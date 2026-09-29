@@ -506,7 +506,7 @@ a:hover {
         --font-h3: clamp(4px, 1.25vw, 18px);
         --font-body: clamp(4px, 1.25vw, 18px);
         --font-body-2: clamp(3px, 1vw, 15px);
-        --section-pad: 12.7vw;
+        --section-pad: 11.46vw;
     }
     
     /* Navigation Start */
