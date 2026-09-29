@@ -242,3 +242,70 @@ header section form button {
 }
 
 /* Tablet Media End */
+
+
+/* Desktop Media Start */
+@media screen and (min-width: 1440px) {
+    header section{
+        display: grid;
+        grid-template-columns: 50% 47%;
+        padding: 3.3vw 10vw;
+        padding-bottom: 8.3vw;
+        background-size: 6.9vw;
+        gap: 1.1vw;
+        align-items: flex-start;
+        background-position: left 3.5vw, bottom right;
+    }
+
+    header h1{
+        font-size: 4.4vw;
+    }
+
+    header h2{
+        font-size: 2.2vw;
+    }
+
+    header h1, header h2{
+        text-align: left;
+    }
+
+    header section form input, header section form textarea{
+        padding: 0px 0px 1.1vw 1.1vw;
+    }
+
+    header section form{
+        gap: 1.75vw
+    }
+
+    header section>div{
+        padding-top: 1.25vw;
+        gap: 2.2vw;
+    }
+
+    header section form textarea{
+        padding-bottom: 0.7vw;
+    }
+
+    header section form button{
+        padding: 0.6vw 2.4vw 0.76vw 2vw;
+        width: fit-content;
+    }
+
+    .contact-card img{
+        width: 5vw;
+    }
+
+    .contact-card{
+        gap: 1.5vw
+    }
+
+    .contact-card-container{
+        gap: 0.5vw;
+    }
+
+    .contact-card h3{
+        letter-spacing: 0;
+        padding-top: 0;
+    }
+}
+/* Desktop Media End */
