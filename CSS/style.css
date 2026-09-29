@@ -511,11 +511,11 @@ a:hover {
     
     /* Navigation Start */
     header>nav{
-        padding: 5vw 11.4vw;
+        padding: 5.1vw 11.4vw;
     }
 
     .left-navbar-container{
-        gap: 5.5vw;
+        gap: 5.6vw;
     }
 
     .left-navbar-container ul{
