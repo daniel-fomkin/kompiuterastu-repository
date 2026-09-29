@@ -442,11 +442,23 @@ header section p {
         width: 24.5vw;
         height: 16.5vw;
     }
+
     .director-front, .director-back {
         width: 24.999999vw;
         height: 17.5vw;
-        padding: 4.1vw;
+        padding: 2vw;
         box-sizing: border-box;
+    }
+
+    .director-front>img {
+        width: 6.9vw;
+        height: auto;
+    }
+
+    .add-button {
+        width: 4.2vw;
+        height: 4.2vw;
+        margin-top: 3.6vw;
     }
     /* Directors Section End */
 }
