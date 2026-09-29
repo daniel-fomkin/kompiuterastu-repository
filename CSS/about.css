@@ -273,14 +273,6 @@ header section p {
 }
 
 /* Tablet Media Start */
-@media screen and (min-width: 1440px){
-    /* Directors Section Start */
-    /*test*/
-    /* Directors Section End */
-}
-/* Tablet Media End */
-
-/* Tablet Media Start */
 @media screen and (min-width: 768px){
     /* Directors Section Start */
     main>section:nth-child(2) h1{
@@ -423,5 +415,15 @@ header section p {
     }
     /* Client Section End */
 
+}
+/* Tablet Media End */
+
+/* Tablet Media Start */
+@media screen and (min-width: 1440px){
+    /* Directors Section Start */
+    main>section:nth-child(2) h1 {
+        padding: 9.5vw 0 5.7vw;
+    }
+    /* Directors Section End */
 }
 /* Tablet Media End */
