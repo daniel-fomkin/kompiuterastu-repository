@@ -23,6 +23,7 @@
 
 .team-wrraper__card{
     display: flex;
+    align-items: center;
     flex-direction: column;
     row-gap: 4.2vw;
 }
