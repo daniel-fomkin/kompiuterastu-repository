@@ -38,7 +38,7 @@
     margin: 0;
 }
 
-.tablet{
+.tablet {
     display: none;
 }
 
@@ -362,7 +362,7 @@ a:hover {
         display: flex;
     }
 
-    .tablet{
+    .tablet {
         display: block;
     }
 
@@ -415,12 +415,12 @@ a:hover {
         text-decoration: none
     }
 
-    header > nav button:hover,
-    header > nav button:hover a {
+    header>nav button:hover,
+    header>nav button:hover a {
         color: var(--bg-darkest);
     }
 
-    header > nav button:hover {
+    header>nav button:hover {
         background-color: white;
     }
 
@@ -443,14 +443,17 @@ a:hover {
         display: flex;
         justify-content: space-between;
     }
+
     .foot-logo {
         justify-content: left;
         padding-top: 56px;
         padding-left: 0;
     }
+
     .foot-logo img {
         width: 96px;
     }
+
     .foot-three {
         width: 100%;
         flex-direction: row;
@@ -483,14 +486,15 @@ a:hover {
 
     /* Footer End*/
     /* CONTACT START */
-    .contact{
+    .contact {
         flex-direction: row;
         justify-content: space-between;
         column-gap: 10.9vw;
-        background-size:26vw;
+        background-size: 26vw;
         padding: 9.8vw 98px 9.6vw 12.9vw;
     }
-    .contact__button{
+
+    .contact__button {
         padding: 1.18vw 4.3vw 1vw 3.8vw;
     }
 
@@ -508,27 +512,29 @@ a:hover {
         --font-body-2: clamp(3px, 1vw, 15px);
         --section-pad: 11.46vw;
     }
-    
+
     /* Navigation Start */
-    header>nav{
+    header>nav {
         padding: 5.1vw 11.4vw;
     }
 
-    .left-navbar-container{
+    .left-navbar-container {
         gap: 5.6vw;
     }
 
-    .left-navbar-container ul{
+    .left-navbar-container ul {
         gap: 2.9vw;
     }
 
-    .left-navbar-container>img{
+    .left-navbar-container>img {
         width: 11.1vw;
     }
 
-    header>nav button{
+    header>nav button {
         padding: 0.6vw 2.29vw 0.5vw 2vw;
     }
+
     /* Navigation End */
 }
+
 /* Desktop Media End */

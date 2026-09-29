@@ -1,15 +1,16 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* TEAM SECTION */
-.team-container *{
+.team-container * {
     margin: 0;
     padding: 0;
     border: 0;
 }
-.team-container{
+
+.team-container {
     display: flex;
     flex-direction: column;
     row-gap: 14.9vw;
@@ -21,56 +22,65 @@
     background-size: 100px;
 }
 
-.team-wrraper__card{
+.team-wrraper__card {
     display: flex;
     align-items: center;
     flex-direction: column;
     row-gap: 4.2vw;
 }
-.team-hero{
+
+.team-hero {
     display: flex;
     flex-direction: column;
     row-gap: 8.5vw;
 }
-.team-hero__divider{
+
+.team-hero__divider {
     background-color: var(--accent-coral);
     width: 13.3vw;
     height: 1vw;
 }
-.team-hero__title{
+
+.team-hero__title {
     color: white;
     width: 64vw;
-    font: normal 700 var(--font-h2)/100%  H1-H2-H3;
+    font: normal 700 var(--font-h2)/100% H1-H2-H3;
 }
-.team-wrraper{
+
+.team-wrraper {
     display: flex;
     flex-direction: column;
     row-gap: 12.8vw;
 }
-.team-wrraper__title{
+
+.team-wrraper__title {
     color: var(--accent-coral);
     font: normal 600 var(--font-h3)/158.556% H1-H2-H3;
     text-align: center;
 }
-.team-wrraper__text{
+
+.team-wrraper__text {
     color: #FFF;
     text-align: center;
     font: normal 600 var(--font-body-2)/166.667% body-1-2;
     opacity: 0.8;
 }
-.team-wrraper__img{
+
+.team-wrraper__img {
     /* display: block;
     margin: auto; */
     width: 19.2vw;
 }
-.card__text-info{
+
+.card__text-info {
     display: flex;
     flex-direction: column;
     row-gap: 2.45vw;
 }
+
 /* TEAM SECTION END */
 /* Header Start  */
-header section{
+header section {
     background-color: var(--bg-lightest);
     color: white;
     font-family: "body-1-2";
@@ -85,7 +95,7 @@ header section{
     background-position: center bottom;
 }
 
-header section h1{
+header section h1 {
     font-family: "H1-H2-H3";
     font-size: var(--font-h1);
     color: #FFF;
@@ -94,7 +104,7 @@ header section h1{
     line-height: 100%;
 }
 
-header section h1 span{
+header section h1 span {
     color: var(--accent-coral);
 }
 
@@ -105,79 +115,92 @@ header section p {
     font-weight: 600;
     line-height: 187.667%;
 }
+
 /* Header End  */
 
 /* SUCCESS STORIES Start  */
-.success-stories-container{
+.success-stories-container {
     display: flex;
     flex-direction: column;
     row-gap: 12.8vw;
     padding: 37.3vw var(--section-pad) 43.8vw 6.4vw;
     background-color: var(--bg-lighter);
-    background-image: 
-    url(../assets/icons/Group\ 8-67.svg),
-    url(../assets/icons/Group\ 8-666.svg);
-    background-position: left top,bottom right;
+    background-image:
+        url(../assets/icons/Group\ 8-67.svg),
+        url(../assets/icons/Group\ 8-666.svg);
+    background-position: left top, bottom right;
     background-size: 39.2vw, 53.3vw;
     background-repeat: no-repeat;
 }
+
 .success-stories-container * {
     margin: 0;
     padding: 0;
 }
-.success-stories-container__title{
+
+.success-stories-container__title {
     text-align: center;
     color: white;
     font: normal 700 var(--font-h2)/100% H1-H2-H3;
 }
-.success-stories-container__title--blue{
+
+.success-stories-container__title--blue {
     color: var(--accent-blue);
 }
-.stories-cards{
+
+.stories-cards {
     display: flex;
     flex-direction: column;
     row-gap: 12.8vw;
 }
-.stories-card{
+
+.stories-card {
     padding-top: 9.6vw;
     position: relative;
     display: flex;
     flex-direction: column;
-    row-gap: 4.3vw; 
+    row-gap: 4.3vw;
     background-image: url(../assets/icons/quote.svg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 17.8vw;
 }
-.stories-card__img{
-    width: 17.8vw; 
+
+.stories-card__img {
+    width: 17.8vw;
 }
-.stories-card__text{
+
+.stories-card__text {
     color: white;
     text-align: center;
     font: normal 600 var(--font-body-2)/166.667% body-1-2;
     word-spacing: -0.4px;
 }
-.person-bio{
+
+.person-bio {
     display: flex;
     flex-direction: column;
     row-gap: 4.3vw;
 }
-.person-info{
+
+.person-info {
     row-gap: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.person-info__full-name{
+
+.person-info__full-name {
     color: var(--accent-blue);
     font: normal 700 var(--font-body)/159.556% H1-H2-H3;
 }
-.person-info__specialty{
+
+.person-info__specialty {
     color: white;
     font: italic 500 clamp(5px, 3.4vw, 13px)/138.462% italic-body;
 }
-.person-info__img{
+
+.person-info__img {
     width: 16.5vw;
     border-radius: 62px;
     outline: 2px solid #C4FFFE;
@@ -188,8 +211,9 @@ header section p {
 
 /* Tablet Media Start */
 @media screen and (min-width: 768px) {
+
     /* Header Start */
-    header section{
+    header section {
         padding-top: 6.25vw;
         padding-bottom: 33.3vw;
         background-size: 46.6vw;
@@ -197,93 +221,139 @@ header section p {
         align-items: center;
     }
 
-    header section h1{
+    header section h1 {
         line-height: 88%;
         width: 100%;
     }
 
-    header section p{
+    header section p {
         width: 59.5vw;
         line-height: 186.667%;
     }
+
     /* Header End */
 
     /* Succies Stories Start */
-    .success-stories-container{
+    .success-stories-container {
         padding: 13vw 12.8vw 13.4vw 12.5vw;
         align-items: center;
         row-gap: 6.25vw;
         background-size: 19.1vw, 26.6vw;
     }
 
-    .success-stories-container__title{
+    .success-stories-container__title {
         line-height: 102%;
         letter-spacing: 0.3px;
     }
 
-    .stories-card{
+    .stories-card {
         padding-top: 4.6vw;
         background-size: 8.7vw;
         row-gap: 2vw;
     }
 
-    .stories-cards{
+    .stories-cards {
         row-gap: 6.6vw;
     }
 
-    .stories-card__text{
+    .stories-card__text {
         width: 73vw;
         word-spacing: normal;
         letter-spacing: -0.075px;
         text-align: center;
     }
 
-    .person-info__img{
+    .person-info__img {
         width: 8vw;
     }
 
-    .person-bio{
+    .person-bio {
         row-gap: 2vw;
     }
+
     /* Succies Stories End */
     /* Team Section Start */
-    .team-container{
+    .team-container {
         row-gap: 8.3vw;
         padding: 13vw 12.7vw;
     }
-    
-    .team-wrraper__card{
+
+    .team-wrraper__card {
         flex-direction: row;
         column-gap: 2.9vw;
-        
+
     }
-    .card__text-info{
+
+    .card__text-info {
         align-items: flex-start;
         row-gap: 1.8vw;
     }
-    .team-wrraper{
+
+    .team-wrraper {
         row-gap: 4.17vw;
     }
-    .team-wrraper__text{
+
+    .team-wrraper__text {
         text-align: start;
         letter-spacing: -0.03133em;
         line-height: 165%;
     }
-    .team-wrraper__img{
+
+    .team-wrraper__img {
         width: 9.3vw;
         height: 9.3vw;
-        
+
     }
-    .team-hero{
+
+    .team-hero {
         row-gap: 4.17vw;
     }
-    .team-hero__divider{
+
+    .team-hero__divider {
         width: 6.5vw;
         height: 0.3vw;
     }
-    .team-hero__title{
+
+    .team-hero__title {
         letter-spacing: 0.006em;
         line-height: 102%;
     }
 }
+
 /* Tablet Media End */
+
+/* Desktop Media Start */
+@media screen and (min-width: 1440px) {
+    header section {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-top: 3.8vw;
+        flex-direction: row;
+        gap: 2.1vw;
+        padding-bottom: 17.7vw;
+
+    }
+
+    header section p {
+        width: 30.9vw;
+        text-align: left;
+        line-height: 155.556%;
+        font-size: var(--font-body);
+        height: 100%;
+        padding-bottom: 0.3vw;
+        background-image: url("../assets/images/divider.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    header section h1 {
+        text-align: left;
+        line-height: 100%;
+        width: 44vw;
+    }
+
+}
+
+/* Desktop Media End */
