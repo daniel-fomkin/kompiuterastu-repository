@@ -330,8 +330,10 @@ header section p {
         padding-top: 3.8vw;
         flex-direction: row;
         gap: 2.1vw;
-        padding-bottom: 17.7vw;
-
+        padding-bottom: 17.4vw;
+        background-image: url(../assets/icons/home-bg-icon.svg), url("../assets/icons/home-header-desktop-bg.png");
+        background-size: 24.8vw, 6.9vw;
+        background-position: 84.8% bottom, left 18%;
     }
 
     header section p {
