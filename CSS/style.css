@@ -535,6 +535,56 @@ a:hover {
     }
 
     /* Navigation End */
+
+    /* Footer Start */
+    footer{
+        display: flex;
+        flex-direction: row;
+        padding: 0 var(--section-pad);
+    }
+
+    .foot-logo{
+        padding-top: 3.12vw;
+        padding-bottom: 1.6vw;
+    }
+
+    .foot-logo img{
+        width: 11.1vw;
+    }
+
+    .foot-links{
+        justify-content: flex-start;
+        gap: 2.8vw;
+    }
+
+    .foot-links a{
+        font-size: var(--font-body);
+    }
+
+    .foot-address{
+        text-align: left;
+        padding-top: 3.2vw;
+        line-height: 170.667%;
+        letter-spacing: 0.3px;
+    }
+
+    .foot-address p:nth-child(1){
+        word-spacing: 2.4px;
+    }
+
+    .foot-three{
+        flex-direction: column;
+    }
+
+    footer a svg{
+        width: 1.6vw;
+    }
+
+    .foot-first-half{
+        justify-content: left;
+        gap: 8.68vw;
+    }
+    /* Footer End */
 }
 
 /* Desktop Media End */
