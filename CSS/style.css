@@ -537,68 +537,69 @@ a:hover {
     /* Navigation End */
 
     /* Footer Start */
-    footer{
+    footer {
         display: flex;
         flex-direction: row;
         padding: 0 var(--section-pad);
         padding-bottom: 3.3vw;
     }
 
-    .foot-logo{
+    .foot-logo {
         padding-top: 3.1vw;
         padding-bottom: 1.6vw;
     }
 
-    .foot-logo img{
+    .foot-logo img {
         width: 11.1vw;
     }
 
-    .foot-links{
+    .foot-links {
         justify-content: flex-start;
         gap: 2.8vw;
     }
 
-    .foot-links a{
+    .foot-links a {
         font-size: var(--font-body);
     }
 
-    .foot-address{
+    .foot-address {
         text-align: left;
         padding-top: 3.1vw;
         line-height: 175.667%;
         letter-spacing: 0.3px;
     }
 
-    .foot-address p:nth-child(1){
+    .foot-address p:nth-child(1) {
         word-spacing: 2.4px;
     }
 
-    .foot-three{
+    .foot-three {
         flex-direction: column;
     }
 
-    footer a svg{
+    footer a svg {
         width: 1.6vw;
     }
 
-    .foot-first-half{
+    .foot-first-half {
         justify-content: left;
         gap: 8.68vw;
     }
 
-    .foot-socials{
+    .foot-socials {
         justify-content: right;
         gap: 1.2vw;
         padding-top: 1.6vw;
         margin-bottom: 2.1vw;
-    } 
+    }
 
-    .foot-copyright{
+    .foot-copyright {
         padding-top: 0;
         text-align: right;
         letter-spacing: 0.25px;
 
     }
+
     /* Footer End */
 }
 
