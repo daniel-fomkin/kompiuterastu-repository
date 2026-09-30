@@ -541,10 +541,11 @@ a:hover {
         display: flex;
         flex-direction: row;
         padding: 0 var(--section-pad);
+        padding-bottom: 3.3vw;
     }
 
     .foot-logo{
-        padding-top: 3.12vw;
+        padding-top: 3.1vw;
         padding-bottom: 1.6vw;
     }
 
@@ -563,8 +564,8 @@ a:hover {
 
     .foot-address{
         text-align: left;
-        padding-top: 3.2vw;
-        line-height: 170.667%;
+        padding-top: 3.1vw;
+        line-height: 175.667%;
         letter-spacing: 0.3px;
     }
 
@@ -583,6 +584,20 @@ a:hover {
     .foot-first-half{
         justify-content: left;
         gap: 8.68vw;
+    }
+
+    .foot-socials{
+        justify-content: right;
+        gap: 1.2vw;
+        padding-top: 1.6vw;
+        margin-bottom: 2.1vw;
+    } 
+
+    .foot-copyright{
+        padding-top: 0;
+        text-align: right;
+        letter-spacing: 0.25px;
+
     }
     /* Footer End */
 }
