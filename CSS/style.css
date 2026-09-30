@@ -535,6 +535,23 @@ a:hover {
     }
 
     /* Navigation End */
+    
+    /* Contact Start */
+    .contact{
+        padding: 5.3vw 18vw;
+        padding-left: 18.2vw;
+        background-size: 13.91vw 16.9vw;
+        background-position-y: 10.5%;
+    }
+
+    .contact__title{
+        letter-spacing: 0.65px;
+    }
+
+    .contact__button{
+        padding: 0.6vw 2.29vw 0.5vw 2vw;
+    }
+    /* Contact End */
 }
 
 /* Desktop Media End */
