@@ -402,6 +402,40 @@ header section p {
         row-gap: 1.57vw;
     }
     /* TEAM SECTION END */
+
+    /* success-stories-container */
+    .success-stories-container {
+        padding: 9.72vw 11.458vw 10.5vw;
+        background-size: 10.1vw, 13.6vw;
+        row-gap: 5.5vh;
+    }
+    .success-stories-container__title .tablet {
+        display: none;
+    }
+    .success-stories-container__title {
+        width: 65vw;
+    }
+    .stories-card__text {
+        line-height: 175%;
+        letter-spacing: 0.4px;
+    }
+    .stories-cards {
+        flex-direction: row;
+        column-gap: 2vw;
+    }
+    .stories-card {
+        padding-top: 3.7vh;
+        width: 33%;
+        background-size: 4.7vw;
+        row-gap: 2.2vh;
+    }
+    .stories-card__text {
+        width: auto;
+    }
+    .person-info__img {
+        width: 4.5vw;
+    }
+    /* success-stories-container END*/
 }
 
 /* Desktop Media End */
