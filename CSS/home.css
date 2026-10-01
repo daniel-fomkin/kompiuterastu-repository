@@ -416,7 +416,7 @@ header section p {
         width: 65vw;
     }
     .stories-card__text {
-        line-height: 25px;
+        line-height: 175%;
         letter-spacing: 0.4px;
     }
     .stories-cards {
