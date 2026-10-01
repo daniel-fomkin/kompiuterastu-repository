@@ -456,12 +456,20 @@ header section p {
         padding-left: 0.5vw;
     }
 
+    .director:nth-child(3) {
+        margin-left: -0.5vw;
+    }
+
     .director:nth-child(4) {
         padding-left: 1.8vw;
     }
 
     .director:nth-child(5) {
         padding-left: 0.5vw;
+    }
+
+    .director:nth-child(6) {
+        margin-left: -0.5vw;
     }
 
     .director-front, .director-back {
