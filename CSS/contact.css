@@ -309,6 +309,18 @@ header section form button {
         letter-spacing: 0;
         padding-top: 0;
     }
+
+    header section form .input-container:has(input:user-invalid)::after, header section form .input-container:has(textarea:user-invalid)::after{
+        font-size: 0.69vw;
+        padding: 0.6vw 1vw;
+        letter-spacing: 0.125px;
+        padding-bottom: 0vw;
+        margin-bottom: -0.4vw;
+    }
+
+    header section form:has(textarea:user-invalid) button{
+        margin-top: 1vw;
+    }
 }
 
 /* Desktop Media End */
