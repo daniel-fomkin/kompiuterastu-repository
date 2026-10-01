@@ -444,8 +444,24 @@ header section p {
     }
     
     .director {
-        width: 24.5vw;
-        height: 16.5vw;
+        width: 24.3056vw;
+        height: 16.5694vw;
+    }
+
+    .director:nth-child(1) {
+        padding-left: 1.8vw;
+    }
+
+    .director:nth-child(2) {
+        padding-left: 0.5vw;
+    }
+
+    .director:nth-child(4) {
+        padding-left: 1.8vw;
+    }
+
+    .director:nth-child(5) {
+        padding-left: 0.5vw;
     }
 
     .director-front, .director-back {
@@ -460,10 +476,15 @@ header section p {
         height: auto;
     }
 
+    .director h3 {
+        padding-top: 0.6vw;
+        letter-spacing: 0.25px;
+    }
+
     .director-front .add-button {
         width: 4vw;
         height: 4vw;
-        margin-top: 1.3vw;
+        margin-top: 1.9vw;
     }
 
     .director-back .add-button {
