@@ -428,20 +428,19 @@ header section p {
 @media screen and (min-width: 1440px){
     /* Directors Section Start */
     main>section:nth-child(2) h1 {
-        padding: 9.5vw 0 4vw;
+        padding: 9.39vw 0 4vw;
     }
 
     main>section:nth-child(2) {
         background-image: url(../assets/icons/about-section1-bg-tablet.png), url(../assets//icons/Group 8 Copy.svg);
-        background-size: 7vw, 19.1vw;
-        background-repeat: no-repeat;
+        background-size: 7vw, 10.9vw;
     }
 
     .directors_block {
         grid-template-columns: 25.5vw 25.5vw 25.5vw;
-        column-gap: 1.4vw;
+        column-gap: 2.0833vw;
         row-gap: 2vw;
-        padding-bottom: 9vw;
+        padding-bottom: 8.7vw;
     }
     
     .director {
@@ -450,9 +449,9 @@ header section p {
     }
 
     .director-front, .director-back {
-        width: 24.99vw;
-        height: 17.5vw;
-        padding: 1.8999vw 1.5vw 1vw 2vw;
+        width: 24.3056vw;
+        height: 17.5694vw;
+        padding: 2vw;
         box-sizing: border-box;
     }
 
@@ -461,14 +460,20 @@ header section p {
         height: auto;
     }
 
-    .add-button {
-        width: 4.2vw;
-        height: 4.2vw;
-        margin-top: 1vw;
+    .director-front .add-button {
+        width: 4vw;
+        height: 4vw;
+        margin-top: 1.3vw;
+    }
+
+    .director-back .add-button {
+        width: 4vw;
+        height: 4vw;
+        margin-top: -0.356vw;
     }
 
     .add-button svg {
-        width: 1.387455vw;
+        width: 1.1111vw;
         height: auto;
     }
     /* Directors Section End */
