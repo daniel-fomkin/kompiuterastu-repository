@@ -355,7 +355,52 @@ header section p {
         line-height: 100%;
         width: 44vw;
     }
+    /* TEAM SECTION START */
+    .team-container{
+        flex-direction: row;
+        column-gap: 8.7vw;
+        background-position: bottom right;
+        padding: 9.7vw 11.5vw 13.7vw 11.5vw;
+    }
+    .team-hero__title{
+        width: 31vw;
+    }
+    .team-hero{
+        row-gap: 3.8vw;
+    }
+    .team-wrraper__img{
+        width: 5vw;
+        height: 5vw;
+    }
+    .team-hero__divider{
+        width: 3.5vw;
+    }
+    .card-text__info{
+        row-gap: 1.1vw;
+    }
+    .team-wrraper__card{
+        column-gap: 1.4vw;
+    }
+    .team-wrraper{
+        position: relative;
+        top: 60px;
+        row-gap: 2.4vw;
 
+    }
+    .team-wrraper__img{
+        align-self:flex-start ;
+    }
+    .team-wrraper__title{
+        line-height: 120%;
+        
+    }
+    .team-wrraper__text{
+        letter-spacing: 0.30px;
+        line-height: 166.667%;
+    }
+    .card__text-info{
+        row-gap: 1.57vw;
+    }
 }
 
 /* Desktop Media End */
