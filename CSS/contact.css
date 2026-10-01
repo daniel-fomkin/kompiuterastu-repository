@@ -318,6 +318,10 @@ header section form button {
         margin-bottom: -0.4vw;
     }
 
+    header section form .input-container:has(input:user-invalid) input::placeholder, header section form .input-container:has(textarea:user-invalid) textarea::placeholder{
+        color: var(--accent-coral);
+    }
+
     header section form:has(textarea:user-invalid) button{
         margin-top: 1vw;
     }
