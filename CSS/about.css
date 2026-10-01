@@ -563,7 +563,7 @@ header section p {
         position: relative;
     }
 
-    header section p::before{
+    header section p::before {
         content: "";
         width: 46px;
         border: solid 2px var(--accent-coral);
@@ -581,6 +581,45 @@ header section p {
         align-self: flex-start;
 
     }
+
     /* Header End */
+
+    /* Client Section Start */
+    .client-section {
+        background-image: url("../assets/icons/client-section-desktop-bg.svg");
+        background-size: 13.8vw;
+        padding: 9.7vw var(--section-pad);
+        padding-bottom: 9.95vw;
+        gap: 4.2vw;
+    }
+
+    .client-section h2 {
+        letter-spacing: 0.5px;
+    }
+
+    .client-section .client-logo-container {
+        justify-content: flex-start;
+        width: 100%;
+        column-gap: 5.6vw;
+    }
+
+    .client-section>.client-logo-container>img {
+        width: 11.4vw;
+        height: auto;
+    }
+
+    .client-section>.client-logo-container .the-jakara-post {
+        width: 12.7vw;
+    }
+
+    .client-section>.client-logo-container .the-guardian {
+        width: 12.5vw;
+    }
+
+    .client-section>.client-logo-container .gadgets {
+        width: 6.8vw;
+    }
+
+    /* Client Section End */
 }
 /* Desktop Media End */

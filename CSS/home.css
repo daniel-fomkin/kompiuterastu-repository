@@ -355,7 +355,87 @@ header section p {
         line-height: 100%;
         width: 44vw;
     }
+    /* TEAM SECTION START */
+    .team-container{
+        flex-direction: row;
+        column-gap: 8.7vw;
+        background-position: bottom right;
+        padding: 9.7vw 11.5vw 13.7vw 11.5vw;
+    }
+    .team-hero__title{
+        width: 31vw;
+    }
+    .team-hero{
+        row-gap: 3.8vw;
+    }
+    .team-wrraper__img{
+        width: 5vw;
+        height: 5vw;
+    }
+    .team-hero__divider{
+        width: 3.5vw;
+    }
+    .card-text__info{
+        row-gap: 1.1vw;
+    }
+    .team-wrraper__card{
+        column-gap: 1.4vw;
+    }
+    .team-wrraper{
+        position: relative;
+        top: 60px;
+        row-gap: 2.4vw;
 
+    }
+    .team-wrraper__img{
+        align-self:flex-start ;
+    }
+    .team-wrraper__title{
+        line-height: 120%;
+        
+    }
+    .team-wrraper__text{
+        letter-spacing: 0.30px;
+        line-height: 166.667%;
+    }
+    .card__text-info{
+        row-gap: 1.57vw;
+    }
+    /* TEAM SECTION END */
+
+    /* success-stories-container */
+    .success-stories-container {
+        padding: 9.72vw 11.458vw 10.5vw;
+        background-size: 10.1vw, 13.6vw;
+        row-gap: 5.5vh;
+    }
+    .success-stories-container__title .tablet {
+        display: none;
+    }
+    .success-stories-container__title {
+        width: 65vw;
+    }
+    .stories-card__text {
+        line-height: 175%;
+        letter-spacing: 0.4px;
+    }
+    .stories-cards {
+        flex-direction: row;
+        column-gap: 2vw;
+    }
+    .stories-card {
+        padding-top: 3.7vh;
+        width: 33%;
+        background-size: 4.7vw;
+        row-gap: 2.2vh;
+    }
+    .stories-card__text {
+        width: auto;
+    }
+    .person-info__img {
+        width: 4.5vw;
+    }
+    /* success-stories-container END*/
 }
 
 /* Desktop Media End */
