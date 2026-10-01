@@ -246,6 +246,7 @@ header section form button {
 
 /* Desktop Media Start */
 @media screen and (min-width: 1440px) {
+    /* Header Start */
     header section {
         display: grid;
         grid-template-columns: 50% 47%;
@@ -325,6 +326,8 @@ header section form button {
     header section form:has(textarea:user-invalid) button{
         margin-top: 1vw;
     }
+    /* Header End */
+
 }
 
 /* Desktop Media End */
