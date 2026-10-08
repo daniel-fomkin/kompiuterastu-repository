@@ -12,7 +12,7 @@ fetch(API_URL)
             feedbackContainer.classList.add("feedback-container");
 
             feedbackContainer.innerHTML =
-                <div class="feedback-card">
+                `<div class="feedback-card">
                     <h2>Name:</h2>
                     <h3>${feedback.name}</h3>
                     <h2>Company name:</h2>
@@ -22,7 +22,7 @@ fetch(API_URL)
                     <div class="feedback-button">
                         <p>Read</p>
                     </div>
-                </div>;
+                </div>`;
             feedbackBlock.appendChild(feedbackContainer);
         });
     })
