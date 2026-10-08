@@ -11,7 +11,7 @@ async function getSession(sessionToken) {
 async function deleteSession(sessionToken) {
     await db.query("DELETE FROM sessions WHERE id=$1", [sessionToken]);
 }
-    
+
 //Create Session
 async function loginReposirory(sessionToken, expires) {
     await db.query("INSERT INTO sessions VALUES ($1, $2)", [sessionToken, expires]);
