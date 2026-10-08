@@ -1,0 +1,98 @@
+/* FEEDBACK START */
+
+.feedback {
+    background-color: var(--bg-lighter);
+    padding: 5vw var(--section-pad) 8vw;
+}
+
+.feedback-content {
+    width: 100%;
+}
+
+.feedback-header {
+    margin-bottom: 4vw;
+}
+
+.feedback-header h1 {
+    font-family: "H1-H2-H3";
+    font-size: var(--font-h1);
+    line-height: 100%;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+/* Card */
+
+.feedback-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.feedback-card {
+    background-color: var(--bg-darker);
+    border: 5px solid var(--bg-darkest);
+    border-radius: 30px;
+    padding: 2vw;
+    min-height: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feedback-card h2 {
+    font-family: "H1-H2-H3";
+    font-size: var(--font-h3);
+    line-height: 155.556%;
+    text-align: center;
+}
+
+.feedback-card h3 {
+    font-family: "body-1-2";
+    font-size: var(--font-body);
+    line-height: 155.556%;
+    font-weight: 600;
+    margin-bottom: 1vw;
+    color: white;
+}
+
+.feedback-button {
+    margin-top: auto;
+    align-self: center;
+    padding: 0.6vw 2vw;
+    border: 2px solid white;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-button p {
+    font-family: "body-1-2";
+    font-size: var(--font-body-2);
+    color: white;
+}
+
+.feedback-button:hover {
+    background-color: white;
+}
+
+.feedback-button:hover p {
+    color: var(--bg-darkest);
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 768px){
+
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 1440px){
+
+}
+
+/* FEEDBACK END */
