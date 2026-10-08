@@ -16,14 +16,6 @@
       "dest": "api/index.js"
     },
     {
-      "src": "/about",
-      "dest": "/PAGES/about.html"
-    },
-    {
-      "src": "/contact",
-      "dest": "/PAGES/contact.html"
-    },
-    {
       "handle": "filesystem"
     }
   ]
