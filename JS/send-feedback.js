@@ -9,7 +9,10 @@ async function sendFeedback(name, email, company, title, message) {
             company,
             title,
             message
-        })
+        }),
+        headers: {
+            "Content-Type": "application/json"
+        }
     })
 
     return response
