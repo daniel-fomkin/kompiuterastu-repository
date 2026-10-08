@@ -1,4 +1,4 @@
-const { loginService } = require("./auth.service");
+const { loginService, logoutService } = require("./auth.service");
 
 async function loginController(req, res) {
     const { username, password } = req.body;
@@ -16,6 +16,15 @@ async function loginController(req, res) {
     });
 }
 
+async function logoutController(req, res) {
+    const sessionToken = req.cookies.session_token;
+
+    await logoutService(sessionToken);
+
+    res.send("Succefuly");
+}
+
 module.exports = {
-    loginController
+    loginController,
+    logoutController
 }
