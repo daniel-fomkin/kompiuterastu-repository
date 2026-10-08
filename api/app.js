@@ -4,6 +4,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const authRouter = require("./auth/auth.routes");
+const feedbackRouter = require("./feedback/feedback.routes");
+
 const errorHandler = require("./middleware/error-handler");
 const cookieParser = require("cookie-parser");
 
@@ -18,7 +20,7 @@ app.get("/", (req, res) => {
     res.send("API is working!");
 });
 
-app.use("/api", authRouter);
+app.use("/api", authRouter, feedbackRouter);
 
 app.use(errorHandler)
 
