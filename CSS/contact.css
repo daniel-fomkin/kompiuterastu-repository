@@ -149,6 +149,19 @@ header section form .input-container:has(textarea:user-invalid)::after {
     padding-top: 2.1vw;
 }
 
+header section form .succesfully{
+    background-color: rgba(1, 153, 1, 0.522);
+    width: fit-content;
+    padding: 0.5vw;
+    box-sizing: border-box;
+    border-radius: 24px;
+    align-self: center;
+}
+
+header section form .succesfully p{
+    color: rgb(6, 242, 6);
+}
+
 header section form:has(textarea:user-invalid) button {
     margin-top: 6.6vw;
     box-sizing: content-box;
