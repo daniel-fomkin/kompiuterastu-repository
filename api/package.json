@@ -17,6 +17,7 @@
     "nodemon": "^3.1.14"
   },
   "dependencies": {
+    "@emailjs/nodejs": "^5.0.2",
     "cookie-parser": "^1.4.7",
     "express": "^5.2.1",
     "pg": "^8.23.1"
