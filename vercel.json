@@ -2,17 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.js",
+      "src": "api/app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "api/index.js"
-    },
-    {
-      "handle": "filesystem"
+      "dest": "/api/app.js"
     },
     {
       "src": "/about",
@@ -21,6 +18,9 @@
     {
       "src": "/contact",
       "dest": "/PAGES/contact.html"
+    },
+    {
+      "handle": "filesystem"
     }
   ]
 }
