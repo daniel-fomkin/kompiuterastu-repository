@@ -1,5 +1,5 @@
 const crypto = require("crypto");
-const { loginReposirory } = require("./auth.repository");
+const { loginReposirory, getSession, deleteSession } = require("./auth.repository");
 
 async function loginService(username, password) {
     if (!(process.env.ADMIN_USERNAME == username && process.env.ADMIN_PASSWORD == password)) {
@@ -18,6 +18,20 @@ async function loginService(username, password) {
     return sessionToken;
 }
 
+async function logoutService(sessionToken) {
+    const session = await getSession(sessionToken);
+
+    if(!session){
+        const err = new Error("Session does not exist");
+        err.status = 401;
+
+        throw err;
+    }
+
+    await deleteSession(sessionToken);
+}
+
 module.exports = {
-    loginService
+    loginService,
+    logoutService
 }
