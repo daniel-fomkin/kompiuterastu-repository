@@ -21,7 +21,7 @@ async function loginService(username, password) {
 async function logoutService(sessionToken) {
     const session = await getSession(sessionToken);
 
-    if(!session){
+    if (!session) {
         const err = new Error("Session does not exist");
         err.status = 401;
 
