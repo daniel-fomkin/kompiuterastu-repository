@@ -131,7 +131,11 @@
     display: inline-block;
     padding: 0.6vw 2vw;
     cursor: pointer;
-    margin-right: -50vw;
+    position: absolute;
+    top: 1vw;
+}
+
+.feedback-close p{
     rotate: 45deg;
 }
 
