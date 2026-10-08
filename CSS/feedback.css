@@ -3,6 +3,7 @@
 .feedback {
     background-color: var(--bg-lighter);
     padding: 5vw var(--section-pad) 8vw;
+    height: 100vh;
 }
 
 .feedback-content {
@@ -90,11 +91,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70vw;
-    max-width: 800px;
+    max-width: 300px;
     min-height: 300px;
     padding: 3vw;
     background-color: var(--bg-darker);
-    border: 5px solid var(--bg-darkest);
     border-radius: 20px;
     z-index: 1000;
     text-align: center;
