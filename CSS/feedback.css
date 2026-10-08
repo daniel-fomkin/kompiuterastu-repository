@@ -113,7 +113,12 @@
     display: block;
 }
 
+.overlay.active {
+    display: block;
+}
+
 .overlay{
+    display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -126,21 +131,14 @@
     display: inline-block;
     padding: 0.6vw 2vw;
     cursor: pointer;
-    margin-left: 59vw;
+    margin-right: -50vw;
+    rotate: 45deg;
 }
 
 .feedback-close p {
     font-family: "body-1-2";
     font-size: var(--font-body-2);
     color: white;
-}
-
-.feedback-close:hover {
-    background-color: white;
-}
-
-.feedback-close:hover p {
-    color: var(--bg-darkest);
 }
 
 .feedback-button-reply {
