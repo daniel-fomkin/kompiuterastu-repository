@@ -28,15 +28,15 @@ form.addEventListener("submit", async (e) => {
     inputs.forEach(input => {
         input.disabled = true
     })
-    
+
     const response = await sendFeedback(name.value, email.value, company.value, title.value, message.value);
 
-    if(response.ok){
+    if (response.ok) {
         succesfully.classList.remove("hidden");
 
         inputs.forEach(input => {
             input.disabled = false
         });
     }
-    
+
 });
