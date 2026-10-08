@@ -81,17 +81,96 @@
     color: var(--bg-darkest);
 }
 
+/* Feedback Board */
+
+.feedback-board {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    max-width: 800px;
+    min-height: 300px;
+    padding: 3vw;
+    background-color: var(--bg-darker);
+    border: 5px solid var(--bg-darkest);
+    border-radius: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Board active */
+
+.feedback-board.active {
+    display: block;
+}
+
+/* Close button */
+
+.feedback-close {
+    display: inline-block;
+    margin-top: 2vw;
+    padding: 0.6vw 2vw;
+    border: 2px solid white;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-close p {
+    font-family: "body-1-2";
+    font-size: var(--font-body-2);
+    color: white;
+}
+
+.feedback-close:hover {
+    background-color: white;
+}
+
+.feedback-close:hover p {
+    color: var(--bg-darkest);
+}
 
 /* Tablet */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+
+    .feedback {
+        padding: 8vw var(--section-pad);
+    }
+
+    .feedback-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2vw;
+    }
+
+    .feedback-card {
+        min-height: 33vw;
+        padding: 4.1vw 3vw;
+    }
 
 }
 
-
 /* Desktop */
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1200px) {
+
+    .feedback {
+        padding: 5vw var(--section-pad) 8vw;
+    }
+
+    .feedback-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2vw;
+    }
+
+    .feedback-card {
+        min-height: 17.5vw;
+        padding: 2vw;
+    }
 
 }
 
