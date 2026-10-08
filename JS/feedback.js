@@ -1,11 +1,13 @@
 const feedbackBlock = document.getElementById("feedback-block");
 
-const API_URL = "http://localhost:3000/feedback";
+const API_URL = "http://localhost:3000/api/feedback";
 
 fetch(API_URL)
-    .then(response => response.json())
+    .then(response => {
+        console.log(feedbacks.status)
+        return response.json()
+    })
     .then(feedbacks => {
-
         feedbacks.forEach(feedback => {
 
             const feedbackContainer = document.createElement("div");
