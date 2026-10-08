@@ -1,4 +1,4 @@
-const { sendFeedbackService } = require("./feedback.service");
+const { sendFeedbackService, getFeedbackService } = require("./feedback.service");
 
 async function sendFeedbackController(req, res) {
     const dbResponse = await sendFeedbackService(req.body);
@@ -6,6 +6,12 @@ async function sendFeedbackController(req, res) {
     res.status(201).send(dbResponse);
 }
 
+async function getFeedbackController(req, res) {
+    const dbResponse = await getFeedbackService()
+    res.send(dbResponse)
+}
+
 module.exports = {
-    sendFeedbackController
+    sendFeedbackController,
+    getFeedbackController
 }
