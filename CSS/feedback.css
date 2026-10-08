@@ -113,6 +113,13 @@
     display: block;
 }
 
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.50);
+}
+    
 /* Close button */
 
 .feedback-close {

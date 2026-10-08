@@ -1,12 +1,15 @@
 const feedbackButton = document.getElementById("feedback-button");
 const feedbackBoard = document.getElementById("feedback-board");
 const feedbackClose = document.getElementById("feedback-close");
+const overlay = document.getElementById("overlay");
 
-feedbackButton.addEventListener("click", function() {
+feedbackButton.addEventListener("click", function () {
     feedbackBoard.classList.add("active");
+    overlay.classList.add("active");
 });
-feedbackClose.addEventListener("click", function() {
-    feedbackBoard.classList.remove("active"); 
+feedbackClose.addEventListener("click", function () {
+    feedbackBoard.classList.remove("active");
+    overlay.classList.remove("active");
 });
 
 
@@ -20,13 +23,21 @@ fetch(API_URL)
         return response.json()
     })
     .then(feedbacks => {
-        feedbacks.forEach(feedback => {
+        const feedbackBlock = document.getElementById("feedback-block");
 
-            const feedbackContainer = document.createElement("div");
-            feedbackContainer.classList.add("feedback-container");
+        const API_URL = "http://localhost:3000/api/feedback";
 
-            feedbackContainer.innerHTML =
-                `<div class="feedback-card">
+        fetch(API_URL)
+            .then(response => response.json())
+            .then(feedbacks => {
+
+                feedbacks.forEach(feedback => {
+
+                    const feedbackContainer = document.createElement("div");
+                    feedbackContainer.classList.add("feedback-container");
+
+                    feedbackContainer.innerHTML =
+                        `<div class="feedback-card">
                     <h2>Name:</h2>
                     <h3>${feedback.name}</h3>
                     <h2>Company name:</h2>
@@ -37,9 +48,10 @@ fetch(API_URL)
                         <p>Read</p>
                     </div>
                 </div>`;
-            feedbackBlock.appendChild(feedbackContainer);
-        });
-    })
-    .catch(error => {
-        console.log("Error:", error);
-    });
+                    feedbackBlock.appendChild(feedbackContainer);
+                });
+            })
+            .catch(error => {
+                console.log("Error:", error);
+            });
+        })
