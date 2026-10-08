@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "api/index.js"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/about",
+      "dest": "/PAGES/about.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/PAGES/contact.html"
+    }
+  ]
+}
