@@ -100,6 +100,13 @@
     text-align: center;
 }
 
+.feedback-board p {
+    font-family: "body-1-2";
+    font-size: var(--font-body);
+    line-height: 100%;
+    color: white;
+}
+
 /* Board active */
 
 .feedback-board.active {
@@ -110,12 +117,9 @@
 
 .feedback-close {
     display: inline-block;
-    margin-top: 2vw;
     padding: 0.6vw 2vw;
-    border: 2px solid white;
-    border-radius: 24px;
     cursor: pointer;
-    transition: 0.3s;
+    margin-left: 59vw;
 }
 
 .feedback-close p {
@@ -129,6 +133,30 @@
 }
 
 .feedback-close:hover p {
+    color: var(--bg-darkest);
+}
+
+.feedback-button-reply {
+    display: inline-block;
+    margin-top: 4vw;
+    padding: 0.6vw 2vw;
+    border: 2px solid white;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-button-reply p {
+    font-family: "body-1-2";
+    font-size: var(--font-body-2);
+    color: white;
+}
+
+.feedback-button-reply:hover {
+    background-color: white;
+}
+
+.feedback-button-reply:hover p {
     color: var(--bg-darkest);
 }
 
