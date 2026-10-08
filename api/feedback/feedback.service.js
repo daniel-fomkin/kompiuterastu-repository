@@ -1,5 +1,5 @@
 const { isNotEmpty, isEmail } = require("../utils/validators");
-const { sendFeedbackRepository } = require("./feedback.repository");
+const { sendFeedbackRepository, getFeedbackRepository } = require("./feedback.repository");
 
 async function sendFeedbackService(dataBody) {
     isNotEmpty(dataBody.name, "Username");
@@ -13,9 +13,13 @@ async function sendFeedbackService(dataBody) {
     isEmail(email);
 
     return await sendFeedbackRepository(dataBody);
+}
 
+async function getFeedbackService() {
+    return await getFeedbackRepository();
 }
 
 module.exports = {
-    sendFeedbackService
+    sendFeedbackService,
+    getFeedbackService
 }
