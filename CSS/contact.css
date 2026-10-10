@@ -121,6 +121,11 @@ header section form .input-container:has(textarea) {
     height: 22.4vw;
 }
 
+header section form .input-container:has(input:user-invalid) input::placeholder,
+header section form .input-container:has(textarea:user-invalid) textarea::placeholder {
+    color: var(--accent-coral);
+}
+
 header section form input:focus,
 header section form textarea:focus {
     outline: none;
@@ -142,6 +147,19 @@ header section form .input-container:has(textarea:user-invalid)::after {
     line-height: normal;
     display: block;
     padding-top: 2.1vw;
+}
+
+header section form .succesfully {
+    background-color: rgba(1, 153, 1, 0.522);
+    width: fit-content;
+    padding: 0.5vw;
+    box-sizing: border-box;
+    border-radius: 24px;
+    align-self: center;
+}
+
+header section form .succesfully p {
+    color: rgb(6, 242, 6);
 }
 
 header section form:has(textarea:user-invalid) button {
@@ -246,6 +264,7 @@ header section form button {
 
 /* Desktop Media Start */
 @media screen and (min-width: 1440px) {
+
     /* Header Start */
     header section {
         display: grid;
@@ -311,7 +330,8 @@ header section form button {
         padding-top: 0;
     }
 
-    header section form .input-container:has(input:user-invalid)::after, header section form .input-container:has(textarea:user-invalid)::after{
+    header section form .input-container:has(input:user-invalid)::after,
+    header section form .input-container:has(textarea:user-invalid)::after {
         font-size: 0.69vw;
         padding: 0.6vw 1vw;
         letter-spacing: 0.125px;
@@ -319,13 +339,10 @@ header section form button {
         margin-bottom: -0.4vw;
     }
 
-    header section form .input-container:has(input:user-invalid) input::placeholder, header section form .input-container:has(textarea:user-invalid) textarea::placeholder{
-        color: var(--accent-coral);
-    }
-
-    header section form:has(textarea:user-invalid) button{
+    header section form:has(textarea:user-invalid) button {
         margin-top: 1vw;
     }
+
     /* Header End */
 
 }
