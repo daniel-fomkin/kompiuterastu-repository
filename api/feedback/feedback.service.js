@@ -21,7 +21,7 @@ async function getFeedbackService() {
     return await getFeedbackRepository();
 }
 
-async function sendEmailService(id) {
+async function sendEmailService(id, req) {
     const feedback = await getFeedbackById(id);
 
     console.log(feedback)
@@ -39,7 +39,7 @@ async function sendEmailService(id) {
         const templateParams = {
         name: feedback.name,
         email: feedback.email,
-        title: feedback.title
+        message: req.body
         }
 
         try {
