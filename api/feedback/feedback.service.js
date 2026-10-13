@@ -1,5 +1,5 @@
 const { isNotEmpty, isEmail } = require("../utils/validators");
-const { sendFeedbackRepository, getFeedbackRepository, getFeedbackById} = require("./feedback.repository");
+const { sendFeedbackRepository, getFeedbackRepository, getFeedbackById } = require("./feedback.repository");
 
 const emailjs = require("@emailjs/nodejs");
 
@@ -25,7 +25,7 @@ async function sendEmailService(id, req) {
     const feedback = await getFeedbackById(id);
 
     console.log(feedback)
-    
+
 
     if (!feedback) {
         const err = new Error('No such feedback');
@@ -33,27 +33,27 @@ async function sendEmailService(id, req) {
 
         throw err
     }
-    
+
     else {
 
         const templateParams = {
-        name: feedback.name,
-        email: feedback.email,
-        message: req.body
+            name: feedback.name,
+            email: feedback.email,
+            message: req.body
         }
 
         try {
-        await emailjs.send(
-            process.env.EMAILJS_SERVICE_ID,
-            process.env.EMAILJS_TEMPLATE_ID,
-            templateParams, 
-            {
-                publicKey: process.env.EMAILJS_PUBLIC_KEY,
-                privateKey: process.env.EMAILJS_PRIVATE_KEY
-            }
-        );
+            await emailjs.send(
+                process.env.EMAILJS_SERVICE_ID,
+                process.env.EMAILJS_TEMPLATE_ID,
+                templateParams,
+                {
+                    publicKey: process.env.EMAILJS_PUBLIC_KEY,
+                    privateKey: process.env.EMAILJS_PRIVATE_KEY
+                }
+            );
 
-        return { success: true, message: 'Feedback sent successfully.' };
+            return { success: true, message: 'Feedback sent successfully.' };
 
         } catch (error) {
             const err = new Error('EmailJS Error:', error);
@@ -63,7 +63,7 @@ async function sendEmailService(id, req) {
         }
     }
 
-    
+
 }
 
 module.exports = {

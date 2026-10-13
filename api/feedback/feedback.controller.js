@@ -14,7 +14,9 @@ async function getFeedbackController(req, res) {
 async function sendEmailController(req, res) {
     const id = req.params.id;
 
-    const emailJsResponse = await sendEmailService(id);
+    const reqBody = req.body;
+
+    const emailJsResponse = await sendEmailService(id, reqBody);
     res.send(emailJsResponse);
 }
 
