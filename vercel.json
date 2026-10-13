@@ -20,6 +20,10 @@
       "dest": "PAGES/login.html"
     },
     {
+      "src": "/feedback",
+      "dest": "PAGES/feedback.html"
+    },
+    {
       "handle": "filesystem"
     }
   ]
