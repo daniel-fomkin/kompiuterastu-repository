@@ -34,9 +34,11 @@
 .feedback-card {
     background-color: var(--bg-darker);
     border: 5px solid var(--bg-darkest);
+    width: 100%;
+    min-height: 300px;
     border-radius: 30px;
     padding: 2vw;
-    min-height: 20vw;
+
     display: flex;
     flex-direction: column;
     text-align: center;
