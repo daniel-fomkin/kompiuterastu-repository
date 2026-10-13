@@ -188,6 +188,19 @@
     text-align: center;
 }
 
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "body-1-2";
+    font-size: var(--font-body);
+    line-height: 100%;
+    color: black;
+}
+
 label{
     font-family: "body-1-2";
     font-size: var(--font-body);
