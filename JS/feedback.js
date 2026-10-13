@@ -5,6 +5,9 @@ const API_URL = "./api/feedback";
 fetch(API_URL)
     .then(response => {
         console.log(response.status)
+        if(response.status === 401){
+            location.href = "./login"
+        }
         return response.json()
     })
     .then(feedbacks => {
