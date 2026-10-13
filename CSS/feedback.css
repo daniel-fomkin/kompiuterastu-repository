@@ -93,7 +93,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 25vw;
-    min-height: 68vh;
+    min-height: 30vh;
     padding: 3vh;
     background-color: var(--bg-darker);
     border-radius: 20px;
@@ -110,20 +110,21 @@
 
 /* Board active */
 
-.feedback-board.active {
+.feedback-board.active,
+.feedback-reply-board.active {
     display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 .overlay.active {
     display: block;
-}
-
-.overlay{
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.50);
 }
     
 /* Close button */
@@ -168,6 +169,32 @@
 
 .feedback-button-reply:hover p {
     color: var(--bg-darkest);
+}
+
+/*Reply Board*/
+
+.feedback-reply-board {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    min-height: 30vh;
+    padding: 3vh;
+    background-color: var(--bg-darker);
+    border-radius: 20px;
+    z-index: 1001;
+    text-align: center;
+}
+
+label{
+    font-family: "body-1-2";
+    font-size: var(--font-body);
+    line-height: 100%;
+    color: white;
+    margin-bottom: 1vw;
+    padding: 0.5vw;
 }
 
 /* Tablet */
