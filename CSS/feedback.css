@@ -90,10 +90,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70vw;
-    max-width: 300px;
-    min-height: 300px;
-    padding: 3vw;
+    width: 25vw;
+    min-height: 68vh;
+    padding: 3vh;
     background-color: var(--bg-darker);
     border-radius: 20px;
     z-index: 1000;
@@ -129,10 +128,10 @@
 
 .feedback-close {
     display: inline-block;
-    padding: 0.6vw 2vw;
     cursor: pointer;
     position: absolute;
     top: 1vw;
+    right: 1vw;
 }
 
 .feedback-close p{
