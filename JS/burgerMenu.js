@@ -4,8 +4,6 @@ const closeButton = document.querySelector("#close-btn");
 const menu = document.querySelector("#menu");
 const burger = menu.querySelector(".burger-menu");
 
-console.log(menuButton)
-
 menuButton.addEventListener("click", () => {
     menu.classList.toggle("hidden");
     burger.style.animation = "openBurger 1s";
