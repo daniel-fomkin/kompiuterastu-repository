@@ -8,7 +8,12 @@ async function getFeedbackRepository() {
     return (await db.query("SELECT * FROM feedbacks")).rows
 }
 
+async function getFeedbackById(id) {
+    return (await db.query("SELECT * FROM feedbacks WHERE id=$1", [id])).rows[0];
+}
+
 module.exports = {
     sendFeedbackRepository,
-    getFeedbackRepository
+    getFeedbackRepository,
+    getFeedbackById
 }

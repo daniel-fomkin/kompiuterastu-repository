@@ -1,4 +1,4 @@
-const { sendFeedbackService, getFeedbackService } = require("./feedback.service");
+const { sendFeedbackService, getFeedbackService, sendEmailService} = require("./feedback.service");
 
 async function sendFeedbackController(req, res) {
     const dbResponse = await sendFeedbackService(req.body);
@@ -11,7 +11,17 @@ async function getFeedbackController(req, res) {
     res.send(dbResponse)
 }
 
+async function sendEmailController(req, res) {
+    const id = req.params.id;
+
+    const reqBody = req.body;
+
+    const emailJsResponse = await sendEmailService(id, reqBody);
+    res.send(emailJsResponse);
+}
+
 module.exports = {
     sendFeedbackController,
-    getFeedbackController
+    getFeedbackController,
+    sendEmailController
 }
