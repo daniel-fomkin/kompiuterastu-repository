@@ -3,6 +3,7 @@
 .feedback {
     background-color: var(--bg-lighter);
     padding: 5vw var(--section-pad) 8vw;
+    height: 100vh;
 }
 
 .feedback-content {
@@ -17,16 +18,16 @@
     font-family: "H1-H2-H3";
     font-size: var(--font-h1);
     line-height: 100%;
-    font-weight: 300;
+    font-weight: 700;
     color: white;
     text-align: center;
 }
 
-/* Feedback Cards */
+/* Card */
 
 .feedback-block {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
 }
 
@@ -62,12 +63,9 @@
 .feedback-button {
     margin-top: auto;
     align-self: center;
-
     padding: 0.6vw 2vw;
-
     border: 2px solid white;
     border-radius: 24px;
-
     cursor: pointer;
     transition: 0.3s;
 }
@@ -86,6 +84,131 @@
     color: var(--bg-darkest);
 }
 
+/* Feedback Board */
+
+.feedback-board {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    min-height: 30vh;
+    padding: 3vh;
+    background-color: var(--bg-darker);
+    border-radius: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.feedback-board p {
+    font-family: "body-1-2";
+    font-size: var(--font-body);
+    line-height: 100%;
+    color: white;
+}
+
+/* Board active */
+
+.feedback-board.active,
+.feedback-reply-board.active {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.overlay.active {
+    display: block;
+}
+    
+/* Close button */
+
+.feedback-close {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+
+.feedback-close p{
+    rotate: 45deg;
+}
+
+.feedback-close p {
+    font-family: "body-1-2";
+    font-size: var(--font-body-2);
+    color: white;
+}
+
+.feedback-button-reply {
+    display: inline-block;
+    margin-top: 4vw;
+    padding: 0.6vw 2vw;
+    border: 2px solid white;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feedback-button-reply p {
+    font-family: "body-1-2";
+    font-size: var(--font-body-2);
+    color: white;
+}
+
+.feedback-button-reply:hover {
+    background-color: white;
+}
+
+.feedback-button-reply:hover p {
+    color: var(--bg-darkest);
+}
+
+/*Reply Board*/
+
+.feedback-reply-board {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    min-height: 30vh;
+    padding: 3vh;
+    background-color: var(--bg-darker);
+    border-radius: 20px;
+    z-index: 1001;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "body-1-2";
+    font-size: var(--font-body);
+    line-height: 100%;
+    color: black;
+}
+
+label{
+    font-family: "body-1-2";
+    font-size: var(--font-body);
+    line-height: 100%;
+    color: white;
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+}
 
 /* Tablet */
 
@@ -108,7 +231,6 @@
 
 }
 
-
 /* Desktop */
 
 @media screen and (min-width: 1200px) {
@@ -129,6 +251,5 @@
     }
 
 }
-
 
 /* FEEDBACK END */
