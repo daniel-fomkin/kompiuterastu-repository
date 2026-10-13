@@ -28,6 +28,6 @@ form.addEventListener("submit", async (e) => {
         return
     }
 
-    location.href = "./feedback";
+    location.href = "./feedback"
 
 })
