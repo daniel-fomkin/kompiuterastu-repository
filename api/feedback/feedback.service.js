@@ -39,7 +39,7 @@ async function sendEmailService(id, req) {
         const templateParams = {
             name: feedback.name,
             email: feedback.email,
-            message: req.body.message
+            message: req.message
         }
 
         try {
