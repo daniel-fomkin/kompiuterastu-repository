@@ -1,10 +1,10 @@
 const feedbackBlock = document.getElementById("feedback-block");
 
-const API_URL = "http://localhost:3000/api/feedback";
+const API_URL = "./api/feedback";
 
 fetch(API_URL)
     .then(response => {
-        console.log(feedbacks.status)
+        console.log(response.status)
         return response.json()
     })
     .then(feedbacks => {
